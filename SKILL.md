@@ -16,9 +16,21 @@ tags:
 This repository is the **Skill + reference-paper library**.  
 A contest run is a **separate git repo**. Initialize it with `python scripts/scaffold_workspace.py --dest <contest-repo>` and do modeling, coding, experiments, and **our** paper there.
 
-Not a prize predictor. Not a one-shot ghostwriter. One Skill for the whole team (modeling + code + paper). Do not split teammate-role entry points.
+Open this repo in Cursor (root `SKILL.md`) or copy the runtime pack. Not a prize predictor. Not a one-shot ghostwriter. One Skill for the whole team (modeling + code + paper). Do not split teammate-role entry points.
 
 Default route: **survey all letters → human chooses → deepen and plan → baseline that covers the ask → optional upgrade → write only evidenced claims → review → submit**. Pause at every `AWAITING_HUMAN_REVIEW`. Load **one** extra reference per stage.
+
+| Stage | Stops when |
+|---|---|
+| S0 启动 | contest `plans/STATE.md` exists |
+| S1 全题侦察 | **G1** letter choice |
+| S2 锁题深挖 | **G2** `plans/solution.md` |
+| S3 计划交接 | **G3** `plans/execution-plan.md` |
+| S4 Baseline | **G4** ledger row per question |
+| S5 优化实验 | **G5** write-scope |
+| S6 增量论文 | **G6** draft |
+| S7 评审回路 | **G7** submit-ready |
+| S8 提交 | freeze or blocker list |
 
 ## Two-repo boundary
 
@@ -52,10 +64,10 @@ Default route: **survey all letters → human chooses → deepen and plan → ba
 
 1. Live source: https://cpipc.acge.org.cn/cw/hp/4
 2. Re-check: `python scripts/year_gate.py`
-3. As of 2026-08-31: 2026 invitation exists; 2026 opening notice / Word template / AI annex do not. Tag operational details `year=2025-provisional`.
+3. As of 2026-09-18: 2026 invitation, opening notice, and AI annex exist; Word-template notice does not. Tag `year=2026`. Borrow unmatched format items from 2025 and label them `year=2025`.
 4. Never invent official percentage weights. Training scores live in `references/scoring-rubric.md` and must be labeled `training_score, not official`.
 
-**CHECKPOINT:** if the opening notice is missing, keep `year=2025-provisional`.
+**CHECKPOINT:** if the opening notice is missing, keep `year=2025-provisional`. If it exists, use `year=2026` and do not invent the Word template.
 
 ## Stage router
 
@@ -115,7 +127,7 @@ Always available: `references/ai-integrity.md`; `references/workspace-layout.md`
 1. In the **contest** repo, read `plans/STATE.md` (then `plans/PROJECT.md`, `plans/CONTEXT.md`).
 2. Continue from `current_stage`. Do not re-ask known fields.
 3. If a gate is open, restate the artifact and wait. “继续” is not a decision unless they also name it (letter, approve plan, write Q1, …).
-4. Missing 2026 opening notice → keep `year=2025-provisional`.
+4. Missing 2026 opening notice → keep `year=2025-provisional`. Opening present and Word-template notice still missing → `year=2026`, format items stay labeled until transcribed.
 
 ## Human gates
 
@@ -169,10 +181,11 @@ Emit only what the **current stage** can honestly fill.
 | Opening a `ref-papers/` file | Prefix `[参考] {filename}` | Never treat as contest `paper/` |
 | KDocs 优秀作品 as corpus | State it is promo PPTX | Point to `research/huawei-cup/download-excellent-works.md` |
 | 2026 opening notice still missing | Keep `year=2025-provisional` | Re-run `python scripts/year_gate.py` |
+| Opening exists, Word template unmatched | Tag `year=2026`; keep 2025 format as labeled fallback | Do not invent a 2026 filename pattern |
 
 ## Evidence boundary
 
-Reference PDFs: `ref-papers/pdf/{year}-{tier}-{team_id}-{problem_title}.pdf` (`REFERENCE_ONLY`; compact git sample, see `ref-papers/manifest.csv`).  
+Reference PDFs: `ref-papers/pdf/{year}-{tier}-{team_id}-{problem_title}.pdf` (`REFERENCE_ONLY`; see `ref-papers/manifest.csv`).  
 Derived conclusions: `research/huawei-cup/findings.md`.  
 Corpus metadata: `research/huawei-cup/corpus-manifest.csv`.
 

@@ -2,14 +2,14 @@
 
 Load this file for 人工智能, ChatGPT, 大模型, 披露, AI 创新点, or contest-time tool use.
 
-`as_of`: 2026-08-30
+`as_of`: 2026-09-18
 
 ## Year gate
 
 - **2025** published Attachment 4 (readable transcription: https://www.cmathc.org.cn/mcm/tz/316.html, dated 2025-08-21). Label `transcription`.
-- **2026** AI annex was **not** posted as of this `as_of`. Do not tell the user that 2025 Attachment 4 is the 2026 rule. Re-fetch https://cpipc.acge.org.cn/cw/hp/4.
+- **2026** AI annex notice **was matched** by `python scripts/year_gate.py` on this `as_of`. Do not tell the user that 2025 Attachment 4 is the 2026 rule. Re-fetch https://cpipc.acge.org.cn/cw/hp/4 and transcribe the 2026 text before citing clauses.
 
-Until 2026 text exists, treat the 2025 principles as **provisional hygiene**, not as a citation to a live 2026 clause.
+Until the 2026 annex is transcribed, treat the 2025 principles as **labeled fallback hygiene**, not as a citation to a live 2026 clause.
 
 ## 2025 principles (provisional)
 

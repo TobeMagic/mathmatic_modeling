@@ -5,7 +5,7 @@ Mirror of Superpower `.planning/STATE.md`. Resume from this file first.
 ```yaml
 current_stage: S0
 open_gate:
-year: 2025-provisional
+year: 2026
 letter:
 training_profile: conservative-baseline
 problem_pdf: problem/statement/

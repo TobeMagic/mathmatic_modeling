@@ -1,6 +1,6 @@
 # Reference papers (NOT our contest manuscript)
 
-Private-team library of **other teams’** Huawei Cup papers.
+Library of **other teams’** Huawei Cup papers.
 
 ## Filename (mandatory)
 
@@ -15,7 +15,7 @@ Examples:
 
 `tier`: `first` | `second` | `third` | `participation` | `report`
 
-Git tracks extracts and `manifest.csv`. Full PDFs in `pdf/` stay **local only** (gitignore) so a public clone does not redistribute contest papers. Rebuild from cache with `python scripts/migrate_ref_papers.py`.
+Git tracks `pdf/`, extracts, and `manifest.csv`. Rebuild naming from cache with `python scripts/migrate_ref_papers.py`.
 
 ## Agent contract
 
@@ -24,4 +24,4 @@ These files are **REFERENCE_ONLY**. Contest `paper/` is OUR draft.
 Cite: `[参考] 2024-first-A24102940057-风电场有功功率优化分配.pdf p.2`  
 Do not write 本文 / 我们 about these files. Do not copy sentences into a contest draft.
 
-Copyright remains with authors and the organizer. Do not upload `pdf/` to a public remote.
+Copyright remains with authors and the organizer.

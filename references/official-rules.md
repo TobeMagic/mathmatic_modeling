@@ -2,16 +2,16 @@
 
 Load this file for any Huawei Cup / CPMCM formatting, submission, anonymity, or integrity question.
 
-`as_of`: 2026-08-30 (portal re-fetched the same day; still no 2026 opening notice)
+`as_of`: 2026-09-18 (`python scripts/year_gate.py` matched 2026 invitation, opening notice, and AI annex; Word-template notice still unmatched)
 
 ## Rule layers (do not collapse)
 
 1. **Hard official rules** for the current year, from [研创网](https://cpipc.acge.org.cn/cw/hp/4).
-2. **Last complete operational package**: 2025 opening notice, used only until 2026 attachments appear.
+2. **Fallback operational package**: 2025 opening notice, used only for items not yet confirmed on the 2026 portal (especially the Word template).
 3. **Transcriptions** of those attachments (cmathc). Label them `transcription`.
 4. **Training rubric** in `scoring-rubric.md`. Not official.
 
-Before a 2026 contest run, re-fetch the official portal. If a 2026 opening notice exists, it replaces the 2025 operational details below.
+Before a contest run, re-fetch the official portal. The 2026 opening notice exists; where it conflicts with 2025 details below, the 2026 notice wins. Do not invent a 2026 filename or Word-template rule until that notice is transcribed.
 
 ## 2026 dates (official invitation, 2026-04-30)
 
@@ -27,9 +27,9 @@ Before a 2026 contest run, re-fetch the official portal. If a 2026 opening notic
 
 Source: https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9080189dcfa24e019dddacc24a1314?page=0
 
-## 2025 operational details (latest complete package)
+## 2025 operational details (fallback)
 
-Use these as the working checklist until 2026 attachments are published. Tag every item `year=2025`.
+Use these only for items not yet published for 2026. Tag every borrowed item `year=2025`.
 
 Source: https://cpipc.acge.org.cn/cw/detail/4/2c90801b9914a68201994b1403512e96
 

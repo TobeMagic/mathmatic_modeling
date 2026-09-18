@@ -15,5 +15,3 @@ dist/
 Thumbs.db
 
 # Contest workspaces must not be created inside this Skill repo
-# First-prize PDFs stay local; do not publish to a public remote
-ref-papers/pdf/

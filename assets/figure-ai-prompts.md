@@ -2,7 +2,7 @@
 
 Use only for **concept / route / procedure** drafts. Comparison, sensitivity, and diagnostic plots must be drawn from `experiments/runs/` data, not from a generative image.
 
-If you use an image model, log it in the contest `plans/run-log.md` (tool / version / purpose). Do not list “AI 作图” as 创新点. 2026 AI annex is still unpublished; treat 2025 hygiene as provisional (`references/ai-integrity.md`).
+If you use an image model, log it in the contest `plans/run-log.md` (tool / version / purpose). Do not list “AI 作图” as 创新点. As of 2026-09-18 the AI-annex notice exists; until it is transcribed, treat 2025 hygiene as a labeled fallback (`references/ai-integrity.md`).
 
 Replace `{...}` placeholders. Never put school names or team ids in the prompt.
 

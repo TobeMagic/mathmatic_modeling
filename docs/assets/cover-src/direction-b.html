@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>Direction B — Year-gate terminal</title>
+  <style>
+    html, body { margin: 0; width: 1600px; height: 900px; overflow: hidden; background: #0c0e0c; }
+    body { font-family: "Cascadia Mono", "IBM Plex Mono", Consolas, monospace; color: #d7e0c8; }
+    .wrap { width: 1600px; height: 900px; display: grid; grid-template-rows: 88px 1fr; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; border-bottom: 1px solid #2a3124;
+    }
+    .brand { font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif; font-size: 28px; color: #f2f5ea; }
+    .tag { color: #e0b14a; font-size: 14px; border: 1px solid #e0b14a; padding: 4px 10px; }
+    .cols { display: grid; grid-template-columns: 420px 1fr; height: 812px; }
+    .tree { padding: 36px 32px; border-right: 1px solid #2a3124; color: #9aa78a; font-size: 16px; line-height: 1.7; }
+    .tree b { color: #f2f5ea; font-weight: 600; }
+    .term { padding: 36px 40px; }
+    .prompt { color: #8ee0a4; margin-bottom: 18px; font-size: 18px; }
+    pre { margin: 0; font-size: 18px; line-height: 1.55; color: #d7e0c8; }
+    .k { color: #9ec4ff; }
+    .s { color: #e0b14a; }
+    .n { color: #8ee0a4; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Huawei Cup modeling Skill</div>
+      <div class="tag">year=2026</div>
+    </header>
+    <div class="cols">
+      <aside class="tree">
+        <b>skill/</b><br>
+        &nbsp;&nbsp;SKILL.md<br>
+        &nbsp;&nbsp;scripts/year_gate.py<br>
+        &nbsp;&nbsp;ref-papers/pdf/<br>
+        <br>
+        <b>contest/</b><br>
+        &nbsp;&nbsp;plans/STATE.md<br>
+        &nbsp;&nbsp;experiments/runs/<br>
+        &nbsp;&nbsp;results/result-ledger.csv<br>
+        &nbsp;&nbsp;paper/
+      </aside>
+      <section class="term">
+        <div class="prompt">$ python scripts/year_gate.py</div>
+        <pre>{
+  <span class="k">"as_of"</span>: <span class="s">"2026-09-18"</span>,
+  <span class="k">"portal"</span>: <span class="s">"https://cpipc.acge.org.cn/cw/hp/4"</span>,
+  <span class="k">"has_2026_invitation"</span>: <span class="n">true</span>,
+  <span class="k">"has_2026_opening_notice"</span>: <span class="n">true</span>,
+  <span class="k">"has_2026_template_notice"</span>: <span class="n">false</span>,
+  <span class="k">"has_2026_ai_annex"</span>: <span class="n">true</span>,
+  <span class="k">"operational_tag"</span>: <span class="s">"year=2026"</span>
+}</pre>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

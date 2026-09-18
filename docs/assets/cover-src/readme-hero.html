@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>Huawei Cup modeling Skill — README hero</title>
+  <style>
+    html, body { margin: 0; width: 1600px; height: 900px; overflow: hidden; }
+    body {
+      font-family: "Segoe UI", "Microsoft YaHei UI", "Noto Sans SC", sans-serif;
+      background: #e7e0d2;
+      color: #1b1712;
+    }
+    .frame {
+      width: 1600px; height: 900px;
+      display: grid;
+      grid-template-columns: 580px 1fr;
+      background: #f1eadb;
+    }
+    .rail {
+      background: #14110e;
+      color: #f4efe4;
+      padding: 64px 52px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .kicker {
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 16px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c4b49a;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 72px;
+      line-height: 0.92;
+      font-weight: 700;
+      margin: 28px 0 22px;
+      letter-spacing: -0.035em;
+    }
+    .sub { font-size: 26px; line-height: 1.4; color: #eadfcf; max-width: 11.5em; }
+    .chips { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px; }
+    .chip {
+      border: 1px solid #5c5348;
+      padding: 7px 12px;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 15px;
+      color: #f0e6d6;
+    }
+    .chip.on { background: #9e2b1e; border-color: #9e2b1e; }
+    .cmd {
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 16px;
+      color: #d7ccba;
+      line-height: 1.55;
+    }
+    .cmd small { display: block; margin-top: 4px; color: #b7ad9c; }
+    .desk { padding: 56px 56px 48px 48px; display: flex; flex-direction: column; }
+    .sheet {
+      flex: 1;
+      background: #fffaf1;
+      border: 1px solid #cfc3ae;
+      box-shadow: 10px 10px 0 #c4b79f;
+      padding: 32px 36px 28px;
+    }
+    .sheet-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 3px solid #1b1712;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+    }
+    .fname { font-family: "Cascadia Mono", Consolas, monospace; font-size: 18px; }
+    .stamp {
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 15px;
+      color: #9e2b1e;
+      border: 2px solid #9e2b1e;
+      padding: 5px 9px;
+    }
+    pre {
+      margin: 0;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 22px;
+      line-height: 1.55;
+      color: #241e18;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 26px; font-size: 18px; }
+    th, td { text-align: left; padding: 8px 8px 8px 0; border-bottom: 1px solid #e4d8c4; }
+    th { color: #6b6256; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .now { color: #9e2b1e; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <aside class="rail">
+      <div>
+        <div class="kicker">huawei-cup-modeling</div>
+        <h1>Huawei Cup<br>Skill</h1>
+        <p class="sub">建模、编程、论文一条流程。比赛写在另一个仓，不替你锁题。</p>
+        <div class="chips">
+          <span class="chip">Skill + ref-papers</span>
+          <span class="chip">contest repo</span>
+          <span class="chip on">S0</span>
+          <span class="chip">year=2026</span>
+        </div>
+      </div>
+      <div class="cmd">python scripts/scaffold_workspace.py<small>--dest &lt;contest-repo&gt;</small></div>
+    </aside>
+    <section class="desk">
+      <article class="sheet">
+        <div class="sheet-top">
+          <span class="fname">contest/plans/STATE.md</span>
+          <span class="stamp">do not lock A–F</span>
+        </div>
+        <pre>current_stage: S0
+open_gate:
+year: 2026
+letter:
+training_profile: conservative-baseline</pre>
+        <table>
+          <thead><tr><th>Stage</th><th>Artifact</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr class="now"><td>S0</td><td>contest tree exists</td><td>start here</td></tr>
+            <tr><td>S1–S2</td><td>letter matrix → solution.md</td><td>G1 / G2</td></tr>
+            <tr><td>S4–S5</td><td>ledger + experiment matrix</td><td>not-run stays blank</td></tr>
+            <tr><td>S6–S8</td><td>paper/ then submission</td><td>evidenced claims only</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

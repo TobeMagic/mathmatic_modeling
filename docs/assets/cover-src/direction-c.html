@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>Direction C — Filename grammar</title>
+  <style>
+    html, body { margin: 0; width: 1600px; height: 900px; overflow: hidden; }
+    body {
+      background: #fff6ea;
+      color: #1f140f;
+      font-family: Georgia, "Songti SC", "SimSun", serif;
+    }
+    .page { width: 1600px; height: 900px; padding: 56px 64px; box-sizing: border-box; position: relative; }
+    .meta {
+      display: flex; justify-content: space-between;
+      font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+      font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; color: #7a5a48;
+    }
+    h1 {
+      font-size: 42px; margin: 36px 0 8px; font-weight: 700;
+      font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+    }
+    .formula {
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 34px;
+      margin: 28px 0 40px;
+      line-height: 1.3;
+      color: #9c1c14;
+    }
+    .example {
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 22px;
+      background: #1f140f;
+      color: #fff6ea;
+      padding: 22px 24px;
+    }
+    .stamp {
+      position: absolute; right: 90px; top: 210px;
+      width: 210px; height: 210px; border: 6px solid #c0120a;
+      color: #c0120a; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Segoe UI", sans-serif; font-weight: 800;
+      letter-spacing: 0.08em; transform: rotate(12deg); font-size: 18px;
+      text-align: center; line-height: 1.3; background: rgba(255,246,234,0.7);
+    }
+    footer {
+      position: absolute; left: 64px; right: 64px; bottom: 48px;
+      font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+      font-size: 20px; color: #3d2a22;
+      display: flex; justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="meta"><span>Huawei Cup modeling Skill</span><span>ref-papers/pdf</span></div>
+    <h1>参考论文不是我们的稿</h1>
+    <div class="formula">{year}-{tier}-{team_id}-{problem_title}.pdf</div>
+    <div class="example">2024-first-A24102940057-风电场有功功率优化分配.pdf</div>
+    <div class="stamp">REFERENCE<br>ONLY</div>
+    <footer>
+      <span>Cite: [参考] filename p.N</span>
+      <span>Our draft lives in contest paper/</span>
+    </footer>
+  </div>
+</body>
+</html>
