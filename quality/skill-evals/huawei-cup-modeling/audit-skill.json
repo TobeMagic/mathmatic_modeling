@@ -1,0 +1,93 @@
+{
+  "skill_file": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\SKILL.md",
+  "status": "static_only",
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "frontmatter_trigger",
+      "weight": 7,
+      "score": 10,
+      "evidence": "5/5 required fields; trigger=true; non_trigger=true"
+    },
+    {
+      "id": 2,
+      "name": "workflow_clarity",
+      "weight": 12,
+      "score": 10,
+      "evidence": "10 numbered stages; explicit contract=true"
+    },
+    {
+      "id": 3,
+      "name": "failure_modes",
+      "weight": 12,
+      "score": 10,
+      "evidence": "failure_section=true; three-part branch=true"
+    },
+    {
+      "id": 4,
+      "name": "checkpoints",
+      "weight": 6,
+      "score": 8,
+      "evidence": "2 explicit checkpoints"
+    },
+    {
+      "id": 5,
+      "name": "actionable_specificity",
+      "weight": 18,
+      "score": 9,
+      "evidence": "2 code blocks; 21 ordered actions"
+    },
+    {
+      "id": 6,
+      "name": "resource_integration",
+      "weight": 4,
+      "score": 10,
+      "evidence": "18 referenced resources; missing=0"
+    },
+    {
+      "id": 7,
+      "name": "architecture_clarity",
+      "weight": 12,
+      "score": 10,
+      "evidence": "21 section headings; 184 lines; sibling boundary=true"
+    },
+    {
+      "id": 8,
+      "name": "real_task_effectiveness",
+      "weight": 23,
+      "score": 0,
+      "evidence": "NOT_RUN: provide --effect-score only after controlled behavioral evaluation"
+    },
+    {
+      "id": 9,
+      "name": "anti_patterns_guardrails",
+      "weight": 6,
+      "score": 10,
+      "evidence": "20 explicit prohibitions"
+    }
+  ],
+  "static_weighted_score": 74,
+  "total_score": null,
+  "effectiveness": "NOT_RUN",
+  "referenced_resources": [
+    "scripts/scaffold_workspace.py",
+    "scripts/year_gate.py",
+    "references/scoring-rubric.md",
+    "references/letter-survey.md",
+    "references/problem-workflow.md",
+    "references/superpower-handoff.md",
+    "references/code-repro.md",
+    "references/experiments-validation.md",
+    "references/incremental-paper.md",
+    "references/paper-writing.md",
+    "references/figures-tables.md",
+    "references/official-rules.md",
+    "scripts/validate_submission.py",
+    "references/ai-integrity.md",
+    "references/workspace-layout.md",
+    "references/profiles.md",
+    "assets/run-log.md",
+    "scripts/pack_skill.py"
+  ],
+  "missing_resources": []
+}

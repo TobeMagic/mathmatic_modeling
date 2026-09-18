@@ -1,0 +1,1266 @@
+
+
+--- page 1 ---
+๙ն࿐
+ݼؒ23102480015
+ჴྠ଀
+1. ඥᤒᤍ
+2. ӧཫ્
+3. ᄻሜ
+
+--- page 2 ---
+ี ଢႿ Markov chain֥WLANଆ
+ᅋ ေğ
+Ч໓ᇶေՖ CSMA/CA৫ഈ૫đᇶ
+Ⴟ Markov chainଆ໙ีđ໡ૌᇶေՖ
+۱؟BSS֝
+໙ีЧᇉഈ൞൳ SIRࠎ
+֥ׅࣜBianchi ଆ྘
+[1]
+ّ֥
+ࣉڿMarkov chainଆđ
+֥WLAN৫b
+Ⴟ໙ี၂ଆਆ BSSഈඍ໙
+֥ׅࣜBianchi҃
+๽๳ູğ0.14738đ ༢๤๽๳ਈູğ67.17442Mbpsb
+Ⴟؽਆᇕሑ෿ሇ၍đ෮
+ଆູ၂ົ Markov chain֤֞
+๽๳ູğ0.24122ൈԮൻྐ༏ਈູ2 Пđ ᄵ༢๤๽๳ູğ
+70.558Mbpsb
+Ⴟ໙ี೘ਆ BSS໙ีđ
+ੱ
+౦ঃ
+ᄝ Markov chain࠹֥
+ෘb
+Ⴟ໙ีඹؓ3BSSোษં
+Ⴕଧུॖି BSSੱđቋ
+؟ؓBSS๽
+๳b
+ሳğࠏ
+1
+
+--- page 3 ---
+1. ໙ีᇗඍ
+1 . 1ࣟ
+໭ཌ๙
+൞ WLANč STA,
+station৘ BSSčAP , access point۱BSSđӫ STAܱ
+֞AP֥࡮AP Ⴕ໭ཌਫ਼ႮఖaWiFi൞ STAb
+AP۳STAࡼAPބSTAđ
+ೆ/ࠏ֥
+ିbDCFႋႨb
+DCFྛ
+ູ 3čCCAđclear channel assessment߭ࠏ
+๼aඔऌԮൻb
+֥DCFᇅଆ྘൞ BianchiႿ Markov chainଆbᆃ
+Ⴟֆ BSS֒2֞0ෂඔऌൈđႮ
+ሑ෿ुቔ၂
+ົ
+Markov chainੱ τੱ pđՖ
+ܙBSS๽๳
+[1]
+b
+ᄝ Bianchiഡਔֆ BSSᇏđԮൻ౦ঃᄵ
+۱؟BSS৘མሑ෿༯
+Ԯൻ౦ঃb
+1 . 2ิԛ
+1 . 2 . 1ิԛଽಸ၂
+۱BSS۱AP֥STAෂඔऌb
+ၛ AP1->STA1ཌྷਣ BSS2Ⴟ STA1 টඪđAP1-
+>STA1đAP2->STA1ႿAP2->STA2ഡACKෂӮ
+֥ࡗRSSI۱AP֥SIRଆb
+۱BSSԮൻൈđ၂
+۱APھؓ2BSSđ
+๽๳b
+۱BSS۱APඔऌԮ
+2
+
+--- page 4 ---
+ھؓ2BSSđ௟
+๽๳b
+1 . 2 . 2ؽ
+۱BSS༯ྛbAPෂඔ
+ࢤ
+Ⴎ SIRଆb
+Їੱ Pe = 10%۱AP
+ഡSIR۱APھؓ2BSS ༢
+๽๳b
+1 . 2 . 3ิԛଽಸ೘
+ॉ੮ 3BSSᇏđAP1 ა AP3๐đAP2൞đ
+AP2Ф AP1ބAP3ᅝbAP1 ა AP3ෂඔऌb
+ഡAP1ބAP3ൈđ ਆ
+๽๳b
+3
+
+--- page 5 ---
+2.ඪૼ
+2 . 1ഡ
+•ຩ઎෮Ⴕ
+Ġ
+•ࡗඪ
+Ġ
+•؇҂႕ཙඔऌᆠԮൻӉ
+Ġ
+•ᯒ൞၂
+Ġ
+•ሑ෿৘མĠ
+•๽๳ਈഡႵ
+౦ঃԛགྷĠ
+•ЇഡᇂФ
+ఙb
+2 . 2ඪૼ
+ၩၬ
+τਬĎ
+pĎ
+δ؇
+Ptrੱ
+Psੱ
+Tsࡗ
+Tcࡗ
+S∗๽๳
+r ቋնᇗԮՑඔ
+WiֻiᆚԳ१նཬ
+bi,kֻ֒iղ kሑ෿
+4
+
+--- page 6 ---
+3.༅
+3 . 1༅
+֥AP֥STAؓ
+ാϧb
+؟֥BSS֡
+۱AP۱APఃᆞᄝ
+ؿ
+ഡ༯đᆃൈႮႿ SIRࢠ
+๼b
+ওഈඍଽಸđোරႿ BianchiቆӮğॢ༽aԮൻӮ
+؟BSS֥n۱AP ཟ STAෂ༯ྛ
+߭ࠏ
+ӱ {b(t), s(t)}đॖၛႨ Markov chain іൕb
+ົ Markov chainႿ APଆ
+֥֤֞Markov chainᇗေໃ
+༢๤๽๳b
+3 . 2༅
+۱BSSԮൻൈđ ႮႿSIRა໙ี၂ཌྷ
+৫ଆ྘b
+֥ۚࢠݖSIRbᄝᆃᇕ౦ঃ༯đྐ
+ົ Markov chainթ
+ੱ p ູ 0ط
+ᆚԳ१ (CW, contention window)ሑ෿Ⴕਆᇕğॢ༽aԮ
+֥Markov chainູ၂ົ Markov chainbၹՎđॖၛ
+၂ົ Markov chain༅ᇏන
+b
+3 . 3༅
+ଆ྘đᄝ໙ี೘ᇏđ๝
+༅AP֥ࡗRSSIč-90dBm<-84dBmĎ đ ਆAPؿ
+֥ٚSTAӱᇏđ ਸ਼
+۱APફđѩ
+ࡱSIRन
+5
+
+--- page 7 ---
+Ԯൻാϧb
+a Ԯൻാϧ(ࠇןࢌ
+Ї)ົ Markov chainשބןࢌݼ
+ԛ๽๳ਈb
+3 . 4༅
+ᇀ 3BSSđఃᇏ AP2ބAP1aAP3๐đAP1ބAP3
+๐đ ֌൞AP1ބAP3ൈđ ႮႿSIRഈඍ໙ีቋ
+ᄝႿ AP༢đAP1ބAP3ა AP2
+๐đ֌൞ AP2ބAP1aAP3đAP2 ა AP1aAP3౦
+Ӯğ ॢ༽a ԮൻӮ
+aԮൻാϧčAP2 ა AP1aAP3ஷሏĎ đ֌൞ႮႿAPӫ
+۱Markov chainb෮ၛ໡ૌᄝ໙ีඹᇏ
+ົ Markov chainљ૭ඍ AP1aAP3ބAP2ႿAP1aAP3֥Markov
+chain౦ঃູAP1ࠇAP3Ď აAP2ႿAP2֥Markov chainđ
+౦ঃູ AP2 ა AP1aAP3ஷሏb ପહ၇ऌՎđ ॖၛ
+۱Markov chainԛ༢๤๽๳b
+6
+
+--- page 8 ---
+4.Чଆ྘
+4 . 1๼
+؟BSS
+ྴ୅ൈ
+ൌགྷb
+ਔඔऌđູх૧
+Ֆ [0, CW-1]۱δčЧ໓
+ᇏູ 9μs๼ඔӰၛδࢫ
+ष൓၂ՑඔऌԮൻđԮൻാϧᄵ CWݔCWਔ CW maxđᄵЌӻՎᆴđᆰ
+ൈ CW֞
+rఙđCWඔऌᆠb
+֞
+۱DIFSb
+4 . 2 Ԯൻଆ྘
+Ⴟֆ BSSđn۱STA۳APԮൻ
+Ⴟ Markov chainଆbഡᇏ
+൓
+০Ⴈ Markov chain؟ؓBSSࣉׄࢫ֥
+ଆbႵ೘ᇕሑ෿ğॢ༽a
+ᄝ೘ᇕྴ୅ൈ༣
+ੱ τԮ
+ੱ pܙBSS๽๳b
+਷ b(t)ބs(t) սі t֥t ൞
+ष൓ൈख़b Ⴈiඔđr ູቋնᇗ
+ԮՑඔđmඔđᄵ CWൔ(4-1)іൕğ
+
+
+
+Wi = 2 iW0, 0 ≤ i ≥ m
+Wi = 2 mW0, m ≤ i ≥ r
+(4-1)
+Ⴟ Markov chain֝τބpӱೂ༯ğ
+ົ {b(t), s(t)}ົ Markov chain іൕđೂ๭ 4.1 ෮ൕ
+7
+
+--- page 9 ---
+๭ 4.1 DCF֥Markov ৽ଆ྘
+๭ᇏ pੱđMarkov chainੱູ(4-2)෮ൕğ
+
+
+
+P {i, k|i, k + 1} = 1, k ∈ [0, Wi − 2], i ∈ [0, r]
+P {0, k|i, 0} = (1 − p)/W0 k ∈ [0, W0 − 1], i ∈ [0, r]
+P {0, k|i − 1, 0} = p/Wi k ∈ [0, Wi − 1], i ∈ [1, r]
+P {0, k|r, 0} = 1/W0 k ∈ [0, W0 − 1]
+(4-2)
+ൔ(4-2)ᇗԮഈཋൈđ
+ࡨ1ੱ൞ 1ᇗԮഈ
+ඔऌᄝ [0, W0-1]߭
+ֻi-1ׄࢫ
+ֻiӱđ ѩᄝ[0, Wi-1]ൔսіđ
+൞ാϧđCWᇗᇂb
+ھMarkov chain҄Ӊ҂թ
+ᄝᇛ௹,ᇅ
+ᇛ௹҂ॖჿ Markov chainູ 1b
+֥ׅࣜBianchi Ԯ
+ቔ
+֥Markov chainቔb
+8
+
+--- page 10 ---
+֥Markov chainđ਷ bi,k = limt→∞ P {s(t) = i, b(t) = k}, i ∈
+(0, m), k ∈ (0, Wi − 1) іൕ MarkovđՖ๭ 4.1ෂാϧ
+౦ঃđሑ෿ bi−1,0ሑ෿ bi,0҄ӉЇওğbi−1,0 → bi,0, bi−1,0 → bi,1 → bi,0, · · · · · ·bi−1,0 →
+bi,Wi−1 → · · · · · · → bi,1 → bi,0܋Wiđbi,0 = bi−1,0 ∗ (p ∗ 1/Wi + p ∗ 1/Wi ∗ 1 +
+· · · + p ∗ 1/Wi ∗ 1Wi−1) = p ∗ bi−1,0,đ
+bi,0 = p ∗ bi−1,0 0 < i ≤ r → bi,0 = pi ∗ b0,0 0 < i ≤ r (4-3)
+Ⴟ಩၂ሑ෿ bi,kđ೏ 0 < i < rᆚԳ१
+b೏ i = 0ሇ၍
+bၹՎႵđ
+bi,k =
+{
+bi−1,0 ∗ p ∗ Wi−k
+Wi
+0 < i < r
+(1 − p) ∗ Wi−k
+Wi
+∗ ∑r
+j=0 bj,0 i = 0
+(4-4)
+ൔ 4-3 սೆൔ 4-4đ
+bi,k = Wi − k
+Wi
+∗ bi,0 0 ≤ i ≤ r, 0 ≤ k ≤ Wi − 1 (4-5)
+ऌ Markov chainູ 1đၹՎႵđ
+1 =
+Wi−1∑
+k=0
+r∑
+i=0
+bi,k =
+r∑
+i=0
+bi,0
+Wi−1∑
+k=0
+Wi − k
+Wi
+=
+r∑
+i=0
+bi,0
+Wi + 1
+2 (4-6)
+ऌൔ 4-1ൔ 4-6ğ
+b00 =
+
+
+
+2(1−p)(1−2p)
+(1−2p)(1−pr+1)+W0(1−p)(1−(2p)r+1) r ≤ m
+2(1−p)(1−2p)
+W0(1−(2p)m+1)(1−p)+(1−2p)(1−pr+1)+W02mpm+1(1−pr−m)(1−2p) m < r
+(4-7)
+֞0ੱູğ
+τ =
+r∑
+0
+bi,0 = b0,0 ∗ 1 − pr+1
+1 − p (4-8)
+Ⴕ nஷ
+ੱॖіൕູ
+p = 1 − (1 − τ )n−1 (4-9)
+ਔൔ 4-8ބ4-9Ⴕໃᆩր౰ҕඔ pބτӱቆđ৳
+b
+9
+
+--- page 11 ---
+4 . 3ׄࢫMarkov chainෘ
+؟BSSđ
+ӱb
+োษંğ
+1.b؟BSS൞1⃝ׄࢫ
+ඔ,؇SLOTTIMEĠ 2⃝ԮൻӮ
+؟BSSԩႿholdᆀ DIFS
+࿃ ACKĠ 3⃝Ԯൻാ
+Ď đᆃൈႮႿԮൻാϧ෮ၛACKր ACKTimeoutđ
+࿃ ACKTimeoutׄࢫ۱
+ᄝ holdটඪ҂ླေॉ੮ hold໙ีb
+2.bሑ෿
+Ⴕğ 1⃝۱SLOTTIME; 2⃝࿃
+ACKႿ hold౦ঃԩ৘๝ഈb
+3.bሑ෿ູ೘ᇕğ 1⃝ѓሙൈ༣Ӊ
+؇SLOTTIMEĠ 2⃝࿃ ACKĠ 3⃝Ԯൻാ
+࿃ACKTimeoutྐ
+ॢ༽đ҂թᄝ hold౦ঃb
+4.bሑ෿ູ೘ᇕğ 1⃝ѓሙൈ༣Ӊ
+؇SLOTTIMEĠ 2⃝࿃ ACKĠ
+đॖၛၛೂ༯іൕğ
+1 ྴ୅ൈ༣ൈӉ =
+
+
+
+σ, w.p. 1 − Ptr
+Ts, w.p. PtrPs
+Tc, w.p. Ptr (1 − Ps)
+ఃᇏ σ؇SLOTTIMEčᄝЧଆ྘ᇏູ 9μsĎ đTsԮൻ
+đTcbPtrੱđ
+Psੱb
+бหඔđֆູ໊
+bpsb༢๤๽๳ਈ S০Ⴈੱა໾৘Ҫ෎ੱčֆ໊ bpsіൕđ
+S = E[ෂൈӉ]
+E[؇] ∗ ໾৘Ҫ෎ੱ (4-10)
+֥֤֞ࢳτބp؇Te
+10
+
+--- page 12 ---
+൞ slotTimeԮൻൈӉ TsބTcљіൕູ
+Ts = H + E[P ] + SIF S + ACK + DIF S
+Tc = H + E∗[P ] + DIF S + ACKT imeout
+E[P ] = E∗[P ]
+E[P ] = P AY LOAD
+SP EED
+M AC = M AClength
+SP EED
+(4-11)
+Ⴟ 4-10൤ೂ༯ğH ູඔऌᆠ๨đЇও MACބ
+໾৘Ҫ (PHY) ๨đE[P]ԮൻൈӉđE∗[P ]֥
+၂ဢđ ᄵE[P ] ა E∗[P ]bPHY
+đMACԢၛ໾৘Ҫ෎ੱ SP EEDb
+ᆠ྽ਙೂ๭ 4.2 ෮ൕb
+ԮൻൈӉ TsބTc๽๳ S∗đ໡ૌ
+नᆴ E[؇]۱
+֥
+ੱ Ptrੱ Psb
+֥Markov chainࣼ
+֥ׄࢫMarkov chain༢b
+ੱPtrؓ
+іղൔູ
+Ptr = 1 − (1 − τ )n￿ (4-12)
+֥nຩ઎đѩ౏
+b
+ੱ Psభิ
+іղൔॖၛཿቔğ
+Ps = nτ (1 − τ )n−1
+Ptr
+(4-13)
+ࠧ
+S∗ = PsPtrE[P ]
+(1 − Ptr) σ + PsPtrTs + Ptr (1 − Ps) Tc
+(4-14)
+༢
+๽๳ਈbࡥ֥
+༅b
+11
+
+--- page 13 ---
+๭ 4.2 ᆠ྽ਙğ(a)ෂ (b) Ԋ๬
+12
+
+--- page 14 ---
+5.م
+5 . 1༅
+ᇅ CSMA/CAᆇbᄝᆃ
+čЧ໓ၛ usቋ
+॥b
+ሇэđ໡ૌ൐ႨႵཋሑ෿
+֥ࠏFinite State Machine)࡟
+ҩb
+5 . 2৫
+5 . 2 . 1৫
+֡channel)đ໡ૌ൐Ⴈ 3ሑ෿ğ
+1. IDLE_STATE.ܙ
+b
+2. TX_STATE.b
+3. COLLISION_STATE.ԩႿஷሏ
+ሑ෿b
+5 . 2 . 2৫
+ׄࢫnode)đ໡ૌҐႨೂ༯ 6ሑ෿ğ
+1. IDLE_STATE.֥DIFS ൈӉb
+2. BACKOFF_STATE.؇SLOT-
+TIMEb
+3. SEND_DATA_STATE.ෂൈ
+ሑ෿b ๝
+࠽SIR༵
+ೆ UNKNOWN_STATE֥W AIT_ACKTIMEOUT_STATE.
+4. UNKNOWN_STATE.ྛ஑
+֥W AIT_ACK_STATEೆ
+W AIT_ACKTIMEOUT_STATE.
+5. W AIT_ACK_STATE.ր SIFS+ACKൈӉb
+6. W AIT_ACKTIMEOUT_STATE.ր ACKTIMEOUT֥
+ൈӉb
+13
+
+--- page 15 ---
+གྷഈඍሑ෿ᇏԢਔ UNKNOWN_STATEሑ෿đఃჅሑ෿न
+ሑ෿
+ॖିሇູ TX_STATEࠇCOLLISION_STATEրđၹՎ໡ૌ൐
+ඔఖ (timer)ൈb
+đ໡ૌҐႨೂ༯ 3ሑ෿b
+1. COUNTING_STATE.ൈb
+2. W AIT_STATE.ր
+ॢ༽b
+3. READY_STATE.ູ༯၂ሑ෿b
+đ໡હॖၛ൐Ⴈ Fig. 5.3іൕ:
+๭ 5.3ൕၩ๭
+5 . 3ඍ
+োđᆺླေ๙
+b໡ૌॖၛᄎႨ৖೛൙
+ྍđᄜ๙
+đ
+b
+๽๳ S:
+S = T X_total_time
+sim_time ∗ phy_rate (5-1)
+ᄝഈൔᇏđT X_total_timeෂൈӉđsim_timeᆇൈ
+طphy_rate іൕ໾৘Ҫ෎ੱb
+14
+
+--- page 16 ---
+ьྟა๙Ⴈྟğൈ
+đ๐/҂
+ྛԩ৘ğ
+๐/๐ྐ
+ਔ
+۱subchannelstatebೂีଢ 2౦ঃ༯đॖၛಪູਆ
+ॖ; ᄝีଢ
+ඹᇏđAP1 ა AP3๐đAP2๐đॖၛಪູ AP2ሑ
+طAP1aAP3֞AP2ሑ෿൞Ⴎ AP2đ
+۱subchannelstate ൞Ⴎ AP2֒AP2 ॢ༽đsubchannelstate ൞ॢ༽ሑ
+֒AP2 ᄝԮൻሑ෿đsubchannelstateྐ
+๐/๐໙ีb
+Ԯൻ֥SIRሑ෿༯
+ğ໡ૌᄝᇶӱ྽৚ᄝஷሏሑ෿༯đູஷ
+đ೏ SIRԮൻĠ೏ SIR֥
+൪ູാϧԮൻb
+ልđ໡
+৫b
+5 . 4ᆇս઒
+໡ૌ൐Ⴈ Python੣ Fb
+15
+
+--- page 17 ---
+6.ࢳ
+6 . 1 ໙ี၂
+6 . 1 . 1৫
+؟۱BSSਔ 2۱AP ა 2۱
+STAđᄝีଢᇏ AP֥ࡗRSSI ູ-70dBmđնႿ CAA ᚐᆴ-84dBmđ
+۱AP֥STAӱᇏ
+ሑ෿ğ
+•໭ AP ཟ STA ԮൻĠ
+•۱AP ཟ STA۱APફđ҂
+ෂĠ
+•۱APݖࣜDIFSؽ
+۱AP֥STAࣜ
+đSTAީ
+SIRؓSTA1 টඪ AP2ఖᇏ
+؊STAཟ APؿ
+ԛ ACKࣉ
+хb
+๭ 6.1֞0ؿ
+؟ھBSS۱APԩ
+ᇕҕඔཌྷ
+ॖb
+aஷሏĎ đ෮ၛđऌ
+৫োරႿ Bianchiົ Markov chainྴ୅
+ׄࢫ۱AP๼хఖ
+๼ඔ {b(t), s(t)} ቔູ Markov chainЧଆ྘၂
+ᇁđ֥Markov chainੱ pԮൻ
+ႋ Bianchiੱ pĎ,ੱ၇ಖູ τ b
+16
+
+--- page 18 ---
+6 . 1 . 2ࢳ
+ົ Markov chainđ෮ၛᄝ໗෿ൈđႵ
+ၛ༯ Markov chainࢳb00ੱ τੱ pğ
+b00 =
+
+
+
+2(1−p)(1−2p)
+(1−2p)(1−pr+1)+W0(1−p)(1−(2p)r+1) r ≤ m
+2(1−p)(1−2p)
+W0(1−(2p)m+1)(1−p)+(1−2p)(1−pr+1)+W02mpm+1(1−pr−m)(1−2p) m < r
+(6-1)
+τ =
+r∑
+0
+bi,0 = b0,0 ∗ 1 − pr+1
+1 − p (6-2)
+p = 1 − (1 − τ )n−1 (6-3)
+ඔູ m = log2
+1024
+16 = 6 đቋնᇗԮՑඔ r = 32 đr > m , ପહ
+౼
+b00 = 2(1 − p)(1 − 2p)
+W0 (1 − (2p)m+1) (1 − p) + (1 − 2p) (1 − pr+1) + W02mpm+1 (1 − pr−m) (1 − 2p)
+(6-4)
+սೆ τ đᇀՎൔ (6-2) ა (6-3)ӱb໡ૌॖၛᄝ Matlab ᇏ০Ⴈ fsolve
+ҕඔ W0 = 16ބn = 2ӱb
+đτ = p = 0.1046ၛ༯ğ
+ੱğ
+Ptr = 1 − (1 − τ )2 = 0.1983 (6-5)
+ؿ
+ੱğ
+Ps = 2τ (1 − τ )2−1
+Ptr
+= 0.9448 (6-6)
+๙Ⴈҕඔ ACKaSIFSູ 1500Bytes
+č1Bytes = 8bitsĎ đPHY ๨ൈӉູ 13.6μsđMAC ๨ູ 30BytesđMACҐႨ໾৘
+Ҫ෎ੱ 455.8Mbpsԛğ
+Ts = H + E[P ] + SIF S + ACK + DIF S = 131.4539µs (6-7)
+Tc = H + E∗[P ] + DIF S + ACKT imeout = 148.4539µs (6-8)
+๽๳ S∗:
+S∗ = PsPtrE[P ]
+(1 − Ptr) σ + PsPtrTs + Ptr (1 − Ps) Tc
+= 0.14738 (6-9)
+17
+
+--- page 19 ---
+֥
+๽๳ູğS = S∗ × 455.8 = 67 .17442Mbps
+6 . 1 . 3ᆇဒᆣ
+ඔູ numnodes = 2 ,simtime = 10000000 (၂తຣັ
+૰Ď bႮႿ༢๤ሑ෿ູAP1 ა AP2๐đAP1ބAP2ࢫ
+֥SIRᇁԮൻാϧđ໡ૌഡᇂԮ
+ೆ W AIT_ACKTIMEOUT_STATE֤
+๽๳ S∗ აቋᇔ๽๳ S նཬğ
+S∗ = 0.14298, S = 65.1702
+đ༂
+ູ 3.075%,ෂЇ
+đՖ 1500Bytesđэູ [100,200,300,...,1400,1500]Bytes, ၛ 100܋15 ቆ
+ೂ๭ 6.3 ෮ൕb
+๭ 6.2б
+ഡᇂ༯đູ 3.100%,၂҄ඪૼඔ࿐ଆ
+b
+18
+
+--- page 20 ---
+6 . 2ؽ
+6 . 2 . 1৫
+۱APղ 0֥
+֥࠭STA؊STAࢤ
+ݼSIR؊STAު
+֥APෂ ACK۱APڎ
+ሑ෿ᆺႵॢ༽
+b
+Ԯൻ
+ਆᇕ౦ঃğ1.۱AP֥STAđ2.۱APሑঃđ
+֥STAള๼
+֞ACKೆ༯
+ົ Markov chain ሇ၍ሑ෿ {b(t), s(t)} ᇏ
+ඔ s(t)ູ 0ᆚԳ१ CWົ Markov chain
+ູ၂ົ Markov chainb
+ᄝਆᇕྴ୅ൈ༣ᇏሇ
+ׄࢫ۱AP๼ඔ b(t) ቔູ၂ົ Markov chain৫
+ၛ༯ଆ྘b
+৫၂ົ Markov chainđ ਷b(t) սі tඔđ Վ
+֥tष൓ൈख़bCW ЌӻԚ൓նཬ҂эğ
+CW = W0 (6-10)
+၂ົ {b(t)}ӱॖၛႨ၂ົ Markov chain іൕđೂ๭ 6.2 ෮ൕb
+๭ 6.3၂ົ Markov chain ଆ྘
+֥Markov chainੱູğ
+P (k|k + 1) = 1 k ∈ [0, W0 − 2]
+19
+
+--- page 21 ---
+P (k|0) = 1/ W0 k ∈ [0, W0 − 1]
+ष൓
+ੱ൞ 1ඔఖ๼хᇀ 0Ԯൻđ
+ඔऌᄝ [0, W0 − 1]๼b
+6 . 2 . 2ࢳ
+֥Markov chainྟ
+֥Markov chainྍMarkov chainऌMarkov chain֥
+ູ1਷bk = lim
+t→∞
+P {b(t) = k}, k ∈ [0, W0 − 1] іൕ Markov
+chainđՖ๭ 6.2๼ᇀ 0đಖ
+ྛ༯၂Ց๼хb ၛb1 ູ২đ ෮Ⴕሑ෿b0֞b1҄ӉЇওğb0 → b1, b0 → b2 → b1, b0 →
+b3 → b2 → b1, · · · · · · , b0 → bW0−1 → · · · → b1܋W0 − 1Ⴟ b2, b3, · · · , bW0−1 ๝৘đ
+֤
+bk = W0 − k
+W0
+b0 (6-11)
+ऌ Markov chainູ 1đၹՎႵđ
+W0−1∑
+k=0
+bk =
+W0−1∑
+k=0
+W0 − k
+W0
+b0 = W0(W0 + 1)
+2 b0 = 1 (6-12)
+Ⴕ
+b0 = 2
+W0 + 1 (6-13)
+֞0ੱູ
+τ = b0 = 2
+W0 + 1 (6-14)
+ੱ
+p = 0 (6-15)
+༯ԮൻӮ
+֥2֥
+݂
+b
+ğ
+Ptr = 1 − (1 − τ )2 = 0.2215 (6-16)
+ğ
+Ps = 1 (6-17)
+20
+
+--- page 22 ---
+֞ACKđ
+ᇁ ACKTimeoutԛགྷđ෮ၛᄝՎԩ Tc = Ts๽๳ູğ
+S∗ = PsPtrE[P ]
+(1 − Ptr) σ + PtrTs
+= 0.24122 (6-18)
+ܣ
+֥2ࡼPtrљႮᆺႵ၂
+ੱ Ptr1ੱ Ptr2ׄࢫ۱
+ӮđՎൈႵğ
+Ptr1 = C 1
+2 τ (1 − τ )
+Ptr2 = τ 2
+Ptr = Ptr1 + Ptr2
+(6-19)
+Ԯൻđ
+๽๳ਈູğ
+S = PsPtr1E[P ]
+(1 − Ptr) σ + PtrTs
+× SP EED +
+PsPtr2E[P ]
+(1 − Ptr) σ + PtrTs
+× 2SP EED
+=70.558M bps
+(6-20)
+6 . 2 . 3ᆇဒᆣ
+ඔູ numnodes = 2 ,simtime = 10000000 (၂తຣັ
+֥SIRෙ
+ೆ W AIT_ACK_STATE߶
+๽๳ S∗ğ
+S∗ = 0.23326
+ᆇᇏđ໡ૌᆺॉ੮ਔྐ
+࠽
+༢๤๽๳ູሙb
+đ༂
+ູ 3.299%đ эູ[100,200,300,...,1400,1500]Bytes, ၛ
+100܋15ೂ๭ 6.4 ෮ൕb
+ഡᇂ༯đູ 3.487%,၂҄ඪૼඔ࿐ଆ
+b
+21
+
+--- page 23 ---
+๭ 6.4б
+6 . 3 ໙ี೘
+6 . 3 . 1৫
+۱AP֥ࡗRSSIູ-90dBmđཬႿ CAA ᚐᆴ-84dBmđᆃၩ
+۱AP๐đପહ APෂྐ
+۱AP֥STAđਸ਼
+۱AP֥STAЧଆ྘
+ေ౰ᇏđ໡ૌླေॉ੮
+b
+۱APь҂թᄝਣ BSSႵ 10%Їđ
+߭
+ӱᇏđSTAࠏ
+֤
+đପ
+۱APࡗSIRཬđ၂֊۱APЇᄝ
+ןࢌൈđႮႿ SIR۱APЇनാϧb
+༅
+೘໙
+۱APđAPෂྐ
+ᇁ෮Ⴕ APྛ holdbᄝՎ໙ีᇏđট
+22
+
+--- page 24 ---
+ሱ AP1ބAP2ղ STA ԩൈđႮႿ SIR઒ാϧđ
+۱STA1ႋ
+AP1đAP2۳STA2ഈॖିթᄝೂ༯ඹ
+ᇕ౦ঃb
+๭ 6.5Ԯൻ౦ঃൕၩ๭
+۱APഡ SIR۱AP֥
+קPreambleಠđՎൈSIRđ
+֥Preamble֥Preambleđ
+קRSSIն
+ႮႿ SIR൳ാϧb
+Ⴟ౦ঃ၂ಠЇ Preambleݼ
+ݼPreambleđ֌൞ႮႿ SIRႿؽđSTAಠ
+එཌᆭభսіඔऌЇğP HY + M AC + P AY LOADགྷ҂൞
+࠭APႿ౦ঃ೘֞
+đ๝ဢႮႿ SIRؓ
+Ⴟ౦ঃඹb
+ᇁԮൻാϧb
+ົ Markov chainଆ
+Ď đ Ԯൻാϧ
+đ
+ົ Markov
+chainྛ
+23
+
+--- page 25 ---
+༅b
+6 . 3 . 2ࢳ
+pܒ
+ົ Markov chain֥
+ੱ pᄝ໙ี೘ᇏđ
+ᆮđ
+໡ૌླေॉҳྍ౦ঃ༯ pఃіղൔb
+Ⴟ໙ี೘đpቆӮğՎ
+ׄࢫ۱1ބ2ׄࢫ1ׄࢫ
+2ׄࢫބ2ᆭၧಖb
+p = Pe + (1 − Pe)(1 − ph) (6-21)
+ఃᇏ PeੱđphႿ෮
+֥APЇൈđ ໭
+ᄝ STAေॉ
+੮ᄝ STAཛb
+ੱ phࢳ
+ູೂ๭ 5.4ןࢌࠧ
+ູ P HY + M AC + P AY LOADb
+๭ 6.6ൕၩ๭
+ᅶ໓ང [4]đ෮ၛ࿊ᄴ
+ׄࢫ1ົ Markov chainູ 1۱SLOTTIMEֆ
+ֆ໊ൈ
+ඔ kğ
+k = P HY + M AC + P AY LOAD
+σ (6-22)
+24
+
+--- page 26 ---
+਷ lp іൕડቀ 2lpW0 − 1 ≥ kׄࢫ1a2๐đ෮
+ׄࢫ1ඔ
+ׄࢫ2ׄࢫ2 ๼хᇀ
+0ׄࢫ2༅
+ׄࢫؓ2ॖb
+ׄࢫ1 ๼хᇀ 0ׄࢫ2ੱb
+ׄࢫݔ2֥kׄࢫ2ԛགྷ
+๼хᇀ 0ׄࢫ2๼хᆴնႿ kඏ
+ׄࢫ2 ๼хᇀ 0b
+ׄࢫ2๼хᆴնႿ kੱğ
+ph =
+r∑
+i=lp
+Wi−1∑
+j=k+1
+bi,j (6-23)
+Psܒ
+Чଆ྘ᇏđPsੱb
+ࡼطPs ၛೂ༯
+ྙൔіղğ
+Ps = τ1[(1 − τ2) + τ2]ph(1 − Pe) + τ2[(1 − τ1) + τ1]ph(1 − Pe)
+Ptr
+(6-24)
+۱APљູ τ1ބτ2đᄝ AP1ؿ
+ေ౰ AP1ಠđႻေ౰ AP1 ྐ༏҂ა
+AP2đႮႿ PsđAP2
+ఃཿቔ [(1 − τ2) + τ2]Ⴟ AP2౦
+ঃđა AP1֥Psіղൔb
+۱APࠧτ1 = τ2đၹՎđൔ5-20߄ࡥ
+ູೂ༯ྙൔğ
+Ps = C 1
+2 τ ph(1 − Pe)
+Ptr
+(6-25)
+ൔ 5-21֥Ps іղൔb
+Sܒ
+ൈ൞ၛTs֥
+đ ೂ๭6.5 ᇏ (a)൞
+ൈđ
+ӈඔđ ೂ๭6.5 ᇏ (b)Ԯൻ
+֥SIFSބACKܱ
+25
+
+--- page 27 ---
+ཬႿ2Tsෘᇏđॖ
+b
+๭ 6.7ൕၩ๭
+ܒSႿൔ4-10֥
+S∗ іղൔb
+ఃᇏ Ts၇ՑԮ
+ଽ
+ࢳph๼хᇀ 0 ൈđਸ਼
+ੱ puඔఖᆴԩႿ [k, k2]֥
+ູ phb
+๭ 6.8؍ࡗ
+.
+Ⴕğ
+k2 = Ts
+δ
+pu =
+r∑
+i=lp
+k2∑
+j=k+1
+bi,j
+(6-26)
+26
+
+--- page 28 ---
+؟
+ğ
+Tsu = 1
+2 [(P HY + M AC + P AY LOAD + Ts) + 2Ts]
+= P HY + M AC + DAT A
+2 + 3
+2 Ts
+(6-27)
+ູ ph − pu၇ಖ൞ TSb
+Ⴟ E[P ]ളೂ๭6.5(b)ႵིԮൻൈӉэູჰট
+b
+E[P ]′ = ph ∗ 2EP
+ph
++ (ph − pu) ∗ EP
+ph
+(6-28)
+ൈӉູ EP đᄝ໙ี
+೘ᇏđᆞೂ๭ 6.5ԮൻൈӉູ 2EPൔ 6-28
+Ԯൻൈ
+नᆴb
+ෘ
+Чଆ྘đႵğ
+b00 =
+
+
+
+2(1−p)(1−2p)
+(1−2p)(1−pr+1)+W0(1−p)(1−(2p)r+1) r ≤ m
+2(1−p)(1−2p)
+W0(1−(2p)m+1)(1−p)+(1−2p)(1−pr+1)+W02mpm+1(1−pr−m)(1−2p) m < r
+(6-29)
+ਸ਼ຓႵğ
+bi,k = Wi − k
+Wi
+∗ bi,0 0 ≤ i ≤ r, 0 ≤ k ≤ Wi − 1 (6-30)
+ੱ ph
+ph =
+r∑
+i=lp
+Wi−1∑
+j=k+1
+bi,j
+=
+r∑
+i=lp
+bi,0
+Wi−1∑
+n=k+1
+Wi − n
+Wi
+=
+r∑
+i=lp
+bi,0
+(Wi − k − 1)(Wi − k)
+2Wi
+=
+r∑
+i=lp
+pib0,0
+(Wi − k − 1)(Wi − k)
+2Wi
+(6-31)
+๝ൈႵ p = Pe + (1 − Pe)(1 − ph)đτ = b0,0 ∗ 1−pr+1
+1−p đᄝ MATLABح
+ຓᇿၩ r, m, k༢đ০Ⴈ fsolveճσbᆃ৚
+ླေᇿၩ r ა mӱॖၛᄝ MATLAB ཌྷႋս઒ᇏҰुb
+27
+
+--- page 29 ---
+ᄵՎൈ Markov chainۀןࢌܱ
+ੱ puຓᇿၩ r, m, k￿k2༢b
+pu =
+r∑
+i=lp
+k2∑
+j=k+1
+bi,j
+=
+r∑
+i=lp
+bi,0
+k2∑
+n=k+1
+Wi − n
+Wi
+=
+r∑
+i=lp
+pib0,0
+(2Wi − k − k2 − 1)(k2 − k)
+2Wi
+(6-32)
+ğ
+S∗ =
+PsPtr( ph∗2E[P ]
+ph
++ (ph−pu)∗E[P ]
+ph
+)
+(1 − Ptr) σ + PsPtr((puTsu + (ph − pu)Ts + Ptr(1 − Ps)Tc)) (6-33)
+Վԩ PtrđPsοᅶჰൔč 4-14๽๳đಖ
+ॉ੮໾৘Ҫ෎ੱ SP EED੣6ݔࢲ
+ೂTable 6.1෮ൕb
+і 6.1๽๳
+๽๳ /Mbps
+1 0.14442 44.41043
+2 0.13430 36.67841
+3 0.14368 44.51861
+4 0.19007 30.45981
+5 0.18413 26.04794
+6 0.18961 34.67287
+6 . 3 . 3ᆇဒᆣ
+ඔູ numnodes = 2 ,simtime = 10000000 (၂తຣັ
+૰Ď bႮႿAP1 ა AP2൓ᇔԩႿॢ༽ሑ෿đၹ
+־IDLE_STATEႿ SIR֝
+28
+
+--- page 30 ---
+ൌ
+๽๳ S∗ აቋᇔ๽๳ S նཬೂTable 6.2෮ൕğ
+і 6.2๽๳
+๽๳ /Mbps༂ҵ
+1 0.15794 45.29719 9.361%
+2 0.13057 37.44748 2.777%
+3 0.15769 45.30293 5.575%
+4 0.20025 31.71960 5.356%
+5 0.17053 27.01195 7.386%
+6 0.22264 35.26618 10.689%
+੣ҕඔ
+ູ 1ೂ๭ 6.9 ෮ൕb
+๭ 6.9б
+ഡᇂ༯đ༂ҵູ 9.787%, ಯಖඪૼඔ࿐ଆ྘ა
+b
+29
+
+--- page 31 ---
+6 . 4 ໙ีඹ
+6 . 4 . 1৫
+ᄝ໙ีඹᇏđ ໡ૌླေॉ੮3BSS ଆ྘đ ఃᇏAP1 ა AP2đAP2 ა AP3ࡗRSSI
+नູ-70dBmđAP1 ა AP3ࡗRSSI ູ-96dBmbᆃၩ໅ሢ AP1 ა AP3๐đAP2 აਆ
+ഡAP1ބAP3ൈđSIRෂनӮ
+ԛAP2֥ࡗSIR༢đ ෮ၛđ ໡ૌླေοᅶSIRোॉ
+֒AP2֥ࡗSIRݼ
+֒AP2֥ࡗSIRൈđ ၩ໅ሢ೏
+AP2 ა AP1ᆀ AP3৫đ
+Ⴟ AP2ࡗSIR౦ঃb
+๭ 6.10༢ൕၩ๭
+ط
+۱AP
+ᇕ౦ঃğ
+1. AP1ބAP2 ԛགྷѩྛԮൻ
+2. AP3ބAP2 ԛགྷѩྛԮൻ
+3. AP1aAP2aAP3 ೘ᆀѩྛԮൻ
+ੱPtrԮ
+ੱ Psӫྟਔđ
+۱
+AP๐౦ঃ҂၂ᇁđఃᇏ AP1ބAP3ބ׻AP2ؽ
+๐ĠAP2 ᄵ൞ਸ਼၂ᇕ౦ঃđ෱ა AP1aAP3༅ਆ
+൞ AP2ࡗτ đp ҂๝đAP2Ф AP1ބ
+AP3ᅝb
+30
+
+--- page 32 ---
+ഡ AP1aAP3ো྘ AđAP2ো྘ B൞ᆺᄝ೘ᇕ
+ົ Markov chainׄࢫAሑ෿ູ bA
+i,kׄࢫB ູ bB
+i,kđ০
+۱Markov chainҕඔb
+ᅶ໙ี೘ᇏ S￿￿￿่
+֥S іൕb
+6 . 4 . 2ࢳ
+ଆ Markov chainੱ pੱ τࢳ
+֥Ptr ა PsׄࢫAҕඔູ pAބ
+τAׄࢫBҕඔູ pBބτBb
+ׄࢫA༅đၛ AP1 ູ২đఃა AP2ఃა
+AP2Ԯൻാϧđ๝ൈఃა AP3๐đॖିԛགྷა AP3౦ঃđ֌൞ႮႿ
+ൈ,SIRაAP2ࢫܣ
+ׄA֥Markov chainੱ pA Ⴕğ
+pA = 1 − (1 − τB) (6-34)
+ׄࢫؓB༅đఃა AP1aAP3๐đ෮ၛఃა AP1ބAP3֥ؿ
+ׄࢫؓܣBđః pB Ⴕğ
+pB = 1 − (1 − τA)2 (6-35)
+֥Markov chainљႵğ
+τA = bA
+0,0 ∗ 1 − pr+1
+A
+1 − pA
+τB = bB
+0,0 ∗ 1 − pr+1
+B
+1 − pB
+(6-36)
+ൔሰč5-25Ď č5-26Ď č5-27Ď đᄝmatlabӱđॖ
+ੱb
+ੱ Ptrੱğ
+Ptr = 1 − (1 − τA)2(1 − τB) (6-37)
+ੱđ ॖၛुቔၛ༯೘ᇕ౦ঃğ1.AP1aAP3ෂđAP2
+ෂĠ2.AP1 ა AP3ෂđAP2ෂĠ3.AP1ބAP3ෂđAP2طPs
+Ⴕğ
+Ps = C 1
+2 τA(1 − τA)(1 − τB) + (1 − τA)2τB + τ 2
+A(1 − τB)
+Ptr
+(6-38)
+֌൞đ ᄝᆃ৚໡ૌ๝ဢླေॉ੮ೂ໙ี೘ᇏđ ๭6.7ഒ
+གྷའb
+31
+
+--- page 33 ---
+֥ݼSIR֥
+đՎԩ਷ poࠧP HYࠧACK
+ੱ
+ູ po1ູ po2b
+๭ 6.11ൕၩ๭
+ԛ Markov chainؓ
+ো྘ AčAP1aAP3Ď đটඪpo1 ა po2љູğ
+po1 =
+r∑
+i=0
+k2∑
+j=k
+bi,j po2 =
+r∑
+i=lp
+k2∑
+j=k+1
+bi,j (6-39)
+ఃᇏ k ა k2໙ี೘ᇏၩၬ၂ᇁb
+Ⴟ TsੱđႵၛ༯ğ
+
+
+
+Ts , 1 − po1 − po2
+1
+2(0 + Ts + EP ) , po1
+1
+2(EP + Ts + 2Ts) , po2
+(6-40)
+Ⴟ E[P ]′ğ 
+
+
+EP , 1 − po1 − po2
+3
+2EP , p o1
+2EP , p o2
+(6-41)
+ॖၛ০Ⴈൔ4-14๽๳ S∗ ູğ
+S∗ = PsPtr[ 3
+2EP po1 + 2EP po2 + (1 − po1 − po2)EP ]
+(1 − Ptr) σ + PsPtr[Ts(1 − po1 − po2) + 1
+2(Ts + EP )po1 + 3
+2(EP + Ts)po2] + Ptr (1 − Ps) Tc
+(6-42)
+༢๤๽๳ਈູ S = S∗ × SP EED b
+ᄝ Matlabູğ
+32
+
+--- page 34 ---
+і 6.3๽๳
+๽๳ /Mbps
+1 0.35196 96.03677
+2 0.28294 77.04132
+3 0.35197 96.03752
+4 0.51349 77.16336
+5 0.44696 64.17043
+6 0.51351 78.16417
+6 . 4 . 3ᆇဒᆣ
+ඔູ numnodes = 3 ,simtime = 10000000 (၂తຣັ
+૰Ď bՎൈAP1 ა AP3๐đAP2۳־AP2
+ሑ෿ channel_state۳־AP1ބAP3ሑ෿
+sub_channel_state౼थႿ AP2ؓAP1ބAP3֥
+đԩ৘ა໙ี 2a3๽๳ S∗ აቋᇔ๽
+๳ S նཬೂTable 6.4෮ൕğ
+і 6.4๽๳
+๽๳ /Mbps༂ҵ
+1 0.33549 96.21853 4.680%
+2 0.27023 77.50196 4.492%
+3 0.33478 96.01490 4.884%
+4 0.49221 77.96606 4.323%
+5 0.40941 64.85054 8.401%
+6 0.49268 78.51571 4.056%
+33
+
+--- page 35 ---
+b๝ဢೂ໙ี 3 ᇏ෮
+ູ 1ೂ๭
+6.12 ෮ൕb
+๭ 6.12б
+ഡᇂ༯đູ 4.846%,၂҄ඪૼඔ࿐ଆ
+b
+34
+
+--- page 36 ---
+7.ࡎ
+7 . 1ׄ
+1. ০Ⴈ Markovಒ૭ඍਔ 802.11 DCFׄࢫ
+ᄹ,ӱ,ྛູĠ
+2.৫ਔሑ෿ሇ၍इᆔ ,༅ ,
+ಒіղൔĠ
+3.႕ཙ,ษંਔ
+႕ཙb
+7 . 2ׄ
+1.ࣉ
+Ġ
+2.ӱđીႵՖ δྛॉ੮đॖၛ
+Ġ
+3. ໙ีඹᆺॉ੮ਔ AP1aAP2ࡗSIR౦ঃđીႵॉ੮
+Ԯൻᇏ SIR౦ঃb
+7 . 3 ᅚຬ
+؟BSS֥WLANज़ีđೂ
+ݣ
+۱؟AP ა STA֥
+؟BSS໙ีb
+ᄝ༢๤ BSSᄖđ༐ຬ
+đঔ
+৫b
+35
+
+--- page 37 ---
+c
+ҕॉ໓ང
+[1] Bianchi Giuseppe. IEEE 802.11-Saturation Throughput Analysis [J]. IEEE Communications
+Letters, 1998, 2(12):318-320.
+[2] P . Chatzimisios, V . Vitsas and A. C. Boucouvalas, ”Throughput and delay analysis of IEEE
+802.11 protocol,” Proceedings 3rd IEEE International Workshop on System-on-Chip for Real-
+Time Applications, 2002, pp. 168-174, doi: 10.1109/IWNA.2002.1241355.
+[3] Hung, Fu- Yi, and Ivan Marsic. ”Performance analysis of the IEEE 802.11 DCF in the presence
+of the hidden stations.” Computer Networks 54.15 (2010): 2674-2687.
+[4]ৡ.ބIEEE802.11WLANs႕ཙ. Diss.ն࿐, 2014.
+[5] M. Ni, Z. Zhong, J. Pan and D. Zhao, ”Saturation performance analysis of IEEE 802.11
+broadcast in 2-D mobile ad hoc networks,” 2012 8th International Wireless Communications
+and Mobile Computing Conference (IWCMC), Limassol, Cyprus, 2012, pp. 1069-1073, doi:
+10.1109/IWCMC.2012.6314354.
+36
+
+--- page 38 ---
+੣ Aӱ྽
+global r;
+global m;
+global node_num;
+%ҕඔקၬ
+r = 32;
+CW_min = 16;
+CW_max = 1024;
+m = log2(CW_max/CW_min);
+node_num = 2;
+ACK = 32;
+SIFS = 16;
+DIFS = 43;
+SLOT = 9;
+ACKTimeout = 65;
+PAYLOAD = 1500;
+MAC = 30;
+PHY = 13.6;
+SPEED = 455.8;
+p_t = fsolve(@bianchi_p_tau,[0, 0],optimset( 'Display','off'));
+%౰ࢳઔغ॓ڏ৽ᇏ֥ሇ၍ۀੱđၛࠣؿෂۀੱ
+p = p_t(1);
+tau = p_t(2);
+P_tr = 1 - (1-tau)^node_num;
+P_s = node_num * tau * (1-tau)^(node_num-1) / (1 -
+(1-tau)^node_num);
+H = MAC * 8 / SPEED + PHY;
+EP = PAYLOAD * 8 / SPEED;
+T_s = H + EP +SIFS + ACK + DIFS;
+T_c = H + EP + DIFS + ACKTimeout;
+S = P_s*P_tr*EP / ((1-P_tr)*SLOT + P_tr*P_s*T_s + P_tr*(1-P_s)*T_c);
+37
+
+--- page 39 ---
+disp('݂၂߄๽๳ਈູ:')
+disp(S)
+disp('ൌ࠽๽๳ਈູ:')
+disp(S*SPEED)
+੣ Bӱ྽
+%ҕඔקၬ
+r = 32;
+CW_min = 16;
+CW_max = 1024;
+m = log2(CW_max/CW_min);
+node_num = 2;
+ACK = 32;
+SIFS = 16;
+DIFS = 43;
+SLOT = 9;
+ACKTimeout = 65;
+PAYLOAD = 1500;
+MAC = 30;
+PHY = 13.6;
+SPEED = 275.3;
+% ၂ົઔغ॓ڏ৽౰ࢳ
+b0 = 2 / (1 + CW_min);
+tau = b0;
+%࠹ෘ๽๳ਈ
+P_tr = 1 - (1-tau)^node_num;
+P_tr1 = 2*tau*(1-tau);
+P_tr2 = tau^2;
+%P_s = node_num * tau * (1-tau)^(node_num-1) / (1 -
+(1-tau)^node_num);
+P_s = 1;
+H = MAC * 8 / SPEED + PHY;
+38
+
+--- page 40 ---
+EP = PAYLOAD * 8 / SPEED;
+T_s = H + EP +SIFS + ACK + DIFS;
+T_c = T_s;
+S = P_s*P_tr*EP / ((1-P_tr)*SLOT + P_tr*P_s*T_s + P_tr*(1-P_s)*T_c);
+S1 = P_s*P_tr1*EP / ((1-P_tr)*SLOT + P_tr*P_s*T_s +
+P_tr*(1-P_s)*T_c);
+S2 = P_s*P_tr2*EP / ((1-P_tr)*SLOT + P_tr*P_s*T_s +
+P_tr*(1-P_s)*T_c);
+disp('݂၂߄๽๳ਈູ:')
+disp(S)
+disp('ൌ࠽๽๳ਈູ:')
+disp(S*SPEED)
+disp('ൌ࠽๽๳ਈູ:')
+disp(S1*SPEED+S2*2*SPEED)
+੣ Cӱ྽
+global CW_max
+global CW_min;
+global r;
+global m;
+global node_num;
+global ACK;
+global SIFS;
+global DIFS;
+global SLOT;
+global ACKTimeout;
+global PAYLOAD;
+global MAC;
+global PHY;
+global SPEED;
+global P_e;
+global p_nonoverlap;
+39

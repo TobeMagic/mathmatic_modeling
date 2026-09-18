@@ -1,0 +1,3 @@
+- 2022-C first prize reports PBS 53.04 vs all-lane-4 35.1 (E-HC-2022-C22103190082).
+- 2024-A first prize reports rainflow rejected; 0.739 s; damage −10% (E-HC-2024-A24102940057).
+- These support F2/F3: named baseline plus a check in the abstract.

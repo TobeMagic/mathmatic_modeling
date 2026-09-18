@@ -1,0 +1,525 @@
+{
+  "skill_bans": {
+    "pass": true,
+    "misses": [],
+    "leaks": []
+  },
+  "triggers": [
+    {
+      "prompt": "帮我拆一下华为杯 C 题",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "研赛论文摘要怎么写",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "数模之星答辩前先把论文评阅一遍",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "中国研究生数学建模竞赛提交文件名",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "CPMCM 实验设计有没有数据泄漏",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "华为杯开赛了先全题侦察不要替我选题",
+      "expect": true,
+      "hit": true,
+      "pass": true
+    },
+    {
+      "prompt": "帮我改一篇 SCI 期刊论文的摘要结构",
+      "expect": false,
+      "hit": false,
+      "pass": true
+    },
+    {
+      "prompt": "全国大学生数学建模竞赛本科国赛论文格式",
+      "expect": false,
+      "hit": false,
+      "pass": true
+    },
+    {
+      "prompt": "CUMCM 2024 undergraduate paper review",
+      "expect": false,
+      "hit": false,
+      "pass": true
+    },
+    {
+      "prompt": "普通课程作业线性规划怎么建模",
+      "expect": false,
+      "hit": false,
+      "pass": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "e01-decompose",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "not-run|尚未|空白|不要编",
+            "96|小时|H24|里程碑"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e01-decompose\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e01-decompose\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e02-leakage",
+      "conditions": [
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e02-leakage\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e02-leakage\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e03-opt-validation",
+      "conditions": [
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e03-opt-validation\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e03-opt-validation\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e04-abstract-figures",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "not-run|未完成|不要|不能把.*写进摘要|空白"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e04-abstract-figures\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e04-abstract-figures\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e05-full-score",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "training_score|训练",
+            "不是官方|非官方|没有.*官方.*百分",
+            "否决|veto|基线"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e05-full-score\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e05-full-score\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e06-rules-2026",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "2026-09-2",
+            "MD5|md5"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e06-rules-2026\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e06-rules-2026\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e07-fabricate",
+      "conditions": [
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e07-fabricate\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e07-fabricate\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e08-fake-weights",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "没有|不存在|不是官方|训练"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e08-fake-weights\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e08-fake-weights\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e09-cumcm-quota-bleed",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [],
+          "leaks": [
+            "请准备 8 张正式图",
+            "按 85 分作为国一门槛",
+            "正文必须 20 页"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e09-cumcm-quota-bleed\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e09-cumcm-quota-bleed\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e10-official-pptx",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "宣传|PPTX|pptx|不是论文",
+            "网盘|GitHub|zhanwen|队号"
+          ],
+          "leaks": [
+            "KDocs 就是官方论文集",
+            "可以当一等奖全文蒸馏"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e10-official-pptx\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e10-official-pptx\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e11-letter-survey",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "AWAITING_HUMAN_REVIEW\\(problem_choice\\)",
+            "A.*B.*C.*D.*E.*F|每[一题个].*字母",
+            "基线"
+          ],
+          "leaks": [
+            "我替你选",
+            "必得一等奖"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e11-letter-survey\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e11-letter-survey\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e12-g1-stop",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "AWAITING_HUMAN_REVIEW\\(problem_choice\\)",
+            "人工|你来选|不要替"
+          ],
+          "leaks": [
+            "已开始编写求解器",
+            "GA 已经实现"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e12-g1-stop\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e12-g1-stop\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e13-baseline-first",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "G3|计划",
+            "先"
+          ],
+          "leaks": [
+            "跳过基线",
+            "Transformer 作为第一版结果"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e13-baseline-first\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e13-baseline-first\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e14-incremental-paper",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "not-run",
+            "问题一"
+          ],
+          "leaks": [
+            "问题二 RMSE",
+            "占位 0\\."
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e14-incremental-paper\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e14-incremental-paper\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e15-no-roles",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "solo|产物|workspace|不分配|不派"
+          ],
+          "leaks": [
+            "今晚 M 负责建模",
+            "C 同学写求解器",
+            "W 同学写摘要"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e15-no-roles\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e15-no-roles\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e16-resume",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "G4|baseline|基线",
+            "AWAITING_HUMAN_REVIEW"
+          ],
+          "leaks": [
+            "直接写摘要",
+            "跳到 S8"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e16-resume\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e16-resume\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e17-failure-rollback",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "failed|失败",
+            "转向|pivot",
+            "not-run|不要.*摘要"
+          ],
+          "leaks": [
+            "NSGA-II 已作为 baseline 完成",
+            "摘要已写入 NSGA"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e17-failure-rollback\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e17-failure-rollback\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e18-s1-s8-sim",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "G1",
+            "S8",
+            "not-run",
+            "validate_submission"
+          ],
+          "leaks": [
+            "实验已全部完成",
+            "官方总分"
+          ],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e18-s1-s8-sim\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e18-s1-s8-sim\\with_skill.md"
+        }
+      ]
+    }
+  ]
+}

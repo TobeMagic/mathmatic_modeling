@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-08-30",
+  "portal": "https://cpipc.acge.org.cn/cw/hp/4",
+  "has_2026_invitation": true,
+  "has_2026_opening_notice": false,
+  "has_2026_template_notice": false,
+  "has_2026_ai_annex": false,
+  "notice_hits": [
+    "2026-invitation"
+  ],
+  "operational_tag": "year=2025-provisional"
+}

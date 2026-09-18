@@ -1,0 +1,4 @@
+- One-click “submittable paper” skills (MathModelAgent README). Failure of integrity, not of staging.
+- “国一≥85” (mathodology). No Huawei official weights.
+- Official 优秀作品 KDocs PPTX. Not a paper dump.
+- Garbled 2024 extracts (`C24102890089`). Do not code as human gold.

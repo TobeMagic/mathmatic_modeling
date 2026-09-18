@@ -1,0 +1,19 @@
+# Local / generated
+research/huawei-cup/cache/
+research/distillation/source-cache/**
+!research/distillation/source-cache/
+!research/distillation/source-cache/README.md
+quality/skill-evals/huawei-cup-modeling/.tmp/
+scripts/fixtures/
+__pycache__/
+*.pyc
+.venv/
+.env
+*.skill
+dist/
+.DS_Store
+Thumbs.db
+
+# Contest workspaces must not be created inside this Skill repo
+# First-prize PDFs stay local; do not publish to a public remote
+ref-papers/pdf/

@@ -1,0 +1,208 @@
+as_of: "2026-09-01"
+policy: >
+  Official organizer pages outrank university reports, which outrank
+  independently transcribed award lists, which outrank GitHub mirrors.
+  Folder names such as 优秀论文 are not award evidence.
+
+sources:
+  - id: cpipc-home
+    tier: official
+    label: official
+    title: 中国研究生数学建模竞赛官方主页
+    url: https://cpipc.acge.org.cn/cw/hp/4
+    published: "2026-08-29"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Current 2026 schedule. Homepage 优秀作品 card is a promotional PPTX, not papers.
+
+  - id: cpipc-2026-invitation
+    tier: official
+    label: official
+    title: 第二十三届参赛邀请函
+    url: https://cpipc.acge.org.cn/cw/contestNews/detail/4/2c9080189dcfa24e019dddacc24a1314?page=0
+    published: "2026-04-30"
+    retrieved: "2026-08-30"
+    access: public
+    notes: 2026 dates, award ceilings, star-finalist rule, integrity language. No 2026 template or AI annex yet.
+
+  - id: cpipc-2025-opening
+    tier: official
+    label: official
+    title: 第二十二届开赛公告
+    url: https://cpipc.acge.org.cn/cw/detail/4/2c90801b9914a68201994b1403512e96
+    published: "2025-09-15"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Latest complete operational package. PDF/MD5/attachment/anonymity/abstract rules.
+
+  - id: cmathc-2025-format
+    tier: transcription
+    label: transcription
+    title: 2025 论文格式规范（cmathc 转录）
+    url: https://www.cmathc.org.cn/mcm/tz/317.html
+    published: "2025-09-15"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Site footer says content is collected for sharing. Use only as readable copy of official Attachment 2.
+
+  - id: cmathc-2025-ai
+    tier: transcription
+    label: transcription
+    title: 2025 人工智能工具及输出使用规定（cmathc 转录）
+    url: https://www.cmathc.org.cn/mcm/tz/316.html
+    published: "2025-08-21"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Readable copy of official Attachment 4. Do not assume it still binds 2026 until 2026 annex appears.
+
+  - id: cpipc-2025-closing
+    tier: official
+    label: official
+    title: 第二十二届颁奖大会报道
+    url: https://cpipc.acge.org.cn/cw/contestPrevious/detail/4/2c9080189e403095019e49ef61582f94?page=0
+    published: "2025-12-10"
+    retrieved: "2026-08-30"
+    access: public
+    notes: 244 first prizes; star champion/runner-up/third named.
+
+  - id: kdocs-excellent-works
+    tier: official-entry-gated
+    label: promo-not-corpus
+    title: 官方优秀作品入口（宣传稿）
+    url: https://www.kdocs.cn/l/cv3j79fp8mZY
+    landing_page: https://cpipc.acge.org.cn/cw/hp/4
+    published: unknown
+    retrieved: "2026-08-29"
+    access: login-required
+    notes: "Mutable WPS document. User-confirmed 2026-08-31: promotional PPTX, not a paper dump. Do not ingest as corpus."
+
+  - id: zhanwen-2024-pan
+    tier: mirror
+    label: locator
+    title: zhanwen 2024 优秀论文百度网盘
+    url: https://pan.baidu.com/s/1uxhi5n47ZsLm9fU1xqpS3g
+    published: unknown
+    retrieved: "2026-08-31"
+    access: pan-login
+    notes: Extraction code opr4. File locator only. Verify team IDs against CPMCM-Awards after download.
+
+  - id: local-2024-baidu-folder
+    tier: local-ingest
+    label: verified-first-prize-sample
+    title: 2024年研究生数学建模竞赛优秀论文选（本地百度下载）
+    url: "D:/BaiduNetdiskDownload/2024年研究生数学建模竞赛优秀论文选"
+    published: "2024"
+    retrieved: "2026-09-01"
+    access: local
+    notes: 24 PDFs, A–F × 4, all team-id-matched to CPMCM-Awards 一等奖. Census 24/242. Cached under research/huawei-cup/cache/papers/; do not commit PDFs.
+
+  - id: huawei-mathcup-123pan
+    tier: mirror
+    label: invalid-locator
+    title: Huawei_Mathcup_OpenAccess 123云盘 22-24范文
+    url: https://www.123912.com/s/kqwxjv-aSaD3?pwd=wdXI
+    published: unknown
+    retrieved: "2026-08-31"
+    access: dead
+    notes: Invalid as of 2026-08-31. Do not use. Prefer zhanwen GitHub 2022–2023 and local 2024 pan.
+
+  - id: skill-landscape
+    tier: maintainer-note
+    label: experience
+    title: GitHub 数模 Skill 调研
+    url: research/huawei-cup/skill-landscape.md
+    published: "2026-08-31"
+    retrieved: "2026-08-31"
+    access: local
+    notes: Comparison of CUMCM/MCM skills. Adopt workflow skeleton only; reject page/figure quotas and prize gates.
+
+  - id: microcourse
+    tier: official-entry
+    label: official
+    title: 中国研究生数学建模竞赛系列微课
+    url: https://weixin.qq.com/sph/AIgWrD7XcU
+    landing_page: https://cpipc.acge.org.cn/cw/hp/4
+    published: unknown
+    retrieved: "2026-08-29"
+    access: wechat
+    notes: Video series. Not downloaded in this pass.
+
+  - id: cpmcm-awards
+    tier: independent-transcription
+    label: transcription
+    title: CPMCM-Awards 获奖名单转录
+    url: https://github.com/lcpmgh/CPMCM-Awards/tree/master/awardlist
+    published: "2026-01-07"
+    retrieved: "2026-08-30"
+    access: public
+    license: MIT
+    notes: README says records come from official final lists. Secondary source. Column 所获奖项 used for matching.
+
+  - id: zhanwen-mathmodel
+    tier: mirror
+    label: mirror
+    title: zhanwen/MathModel 2022-2023 论文镜像
+    url: https://github.com/zhanwen/MathModel
+    published: unknown
+    retrieved: "2026-08-30"
+    access: public
+    notes: File locator only. Directory 优秀论文 is not an award certificate.
+
+  - id: questions-archive
+    tier: independent-transcription
+    label: transcription
+    title: 历年赛题名归档
+    url: https://github.com/lcpmgh/CPMCM-Awards/blob/master/OtherFiles/0-questions_archive.csv
+    published: "2025-12-30"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Used for problem titles 2004-2025.
+
+  - id: latexstudio-gmcmthesis
+    tier: community-template
+    label: experience
+    title: GMCMthesis LaTeX 模板
+    url: https://github.com/latexstudio/GMCMthesis
+    published: "2024-09-17"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Unofficial. Official Word/PDF template remains authoritative each year.
+
+  - id: 2025-star-champion-cumt
+    tier: university-report
+    label: experience
+    title: 2025 数模之星冠军报道
+    url: https://cese.cumt.edu.cn/info/1003/7411.htm
+    published: "2025-12-07"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Method outline for 2025 C. Not a full paper.
+
+  - id: 2024-star-champion-sdu
+    tier: university-report
+    label: experience
+    title: 2024 数模之星冠军报道
+    url: https://www.ygb.sdu.edu.cn/info/1013/18618.htm
+    published: "2024-12-10"
+    retrieved: "2026-08-30"
+    access: public
+    notes: Method outline for 2024 C. Star rank is defense-influenced.
+
+  - id: 2024-star-runnerup-just
+    tier: university-report
+    label: experience
+    title: 2024 数模之星亚军报道
+    url: https://ygb.just.edu.cn/2025/0220/c8719a357928/page.htm
+    published: "2024-12-12"
+    retrieved: "2026-08-30"
+    access: public
+
+do_not_treat_as_official:
+  - Any fixed 100-point official rubric with published weights
+  - Exact similarity or AI-detection thresholds
+  - 2025 AI annex automatically binding 2026
+  - GitHub folder labels as award proof
+  - Official 优秀作品 KDocs (promo PPTX)
+  - Commercial 'standard answers' and blog scoring sheets
+  - CUMCM undergraduate review points as CPMCM national rules
+  - CUMCM/MCM skill quotas (20 pages, 8 figures, 国一≥85) as Huawei Cup rules

@@ -1,0 +1,22 @@
+{
+  "source": {
+    "title": "Public mathematical-modeling contest skills plus Huawei Cup first-prize papers",
+    "creator": "multiple public repositories and contest authors",
+    "published": "2024-2026",
+    "type": "article-collection",
+    "language": "zh",
+    "locations": [
+      "research/huawei-cup/skill-landscape.md",
+      "research/huawei-cup/findings.md",
+      "https://github.com/handsomeZR-netizen/mathmodel-skill/commit/d3941e14d8693fb4a79948e59afff3098734127e"
+    ]
+  },
+  "status": "validated",
+  "skills": [
+    {
+      "id": "top-tier-modeling-evidence-lens",
+      "path": "skills/top-tier-modeling-evidence-lens",
+      "status": "accepted"
+    }
+  ]
+}

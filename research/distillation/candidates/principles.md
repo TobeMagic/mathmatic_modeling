@@ -1,0 +1,3 @@
+- If a number was not run, leave the cell blank (`not-run`). Evidence: SKILL hard bans; 2022-C second attachment scores.
+- Open attachments before naming a model. Evidence: mathmodel-pro teaching rule; 2024-E video extraction before congestion model.
+- Exception: data-open probe is allowed before G3; solvers are not.

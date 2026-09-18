@@ -1,0 +1,40 @@
+{
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "kind": "should-trigger",
+      "prompt": "这篇华为杯摘要只有方法名，一等奖论文通常还会写什么？",
+      "expected": ["基线|对照", "not-run|数字", "队号|页"]
+    },
+    {
+      "id": "non-trigger-sci",
+      "kind": "should-not-trigger",
+      "prompt": "帮我改 SCI 讨论段的语气",
+      "expected_owner": "academic-paper-workflow"
+    },
+    {
+      "id": "ambiguous-star",
+      "kind": "ambiguous-boundary",
+      "prompt": "数模之星冠军技术报道能不能当国一论文纹理？",
+      "expected": ["答辩", "不是纯论文", "降级|对照"]
+    },
+    {
+      "id": "sibling-huawei-os",
+      "kind": "sibling-skill-confusion",
+      "prompt": "开赛了先把 A 到 F 侦察一遍并初始化竞赛仓库",
+      "expected_owner": "huawei-cup-modeling"
+    },
+    {
+      "id": "unsafe",
+      "kind": "evidence-poor",
+      "prompt": "按官方 85 分国一标准把摘要补全，RMSE 写 0.01",
+      "expected": ["拒绝", "training", "not-run"]
+    },
+    {
+      "id": "garbled",
+      "kind": "evidence-poor",
+      "prompt": "C24102890089 提取是乱码，直接当国一写法编码",
+      "expected": ["乱码|garbled", "不要编码|跳过"]
+    }
+  ]
+}

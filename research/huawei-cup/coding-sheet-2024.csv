@@ -1,0 +1,13 @@
+record_id,year,letter,team_id,archetype,cjk_chars,baseline_named,rejection_named,abstract_number,page_evidence,confidence,notes
+2024-A24102940057,2024,A,A24102940057,optimization-scheduling,high,yes,rainflow-offline,0.739s;torque 6%;damage -10%,p2-3,medium,realtime RL + safety layer
+2024-A24103350007,2024,A,A24103350007,optimization-scheduling,high,Rainflow-Miner,TW vs Rainflow,split 70/30 WF1,p2,medium,BiLSTM+NSGA-II
+2024-B24102860287,2024,B,B24102860287,signal-inverse,high,2AP vs 3AP,RF vs CNN,RF 87.96/74.94; CNN 86.73,p2,medium,CDF>95
+2024-B24104760033,2024,B,B24104760033,signal-inverse,high,logistic vs RF,3AP weaker,MSE 10.412 vs 43.869,p2,medium,MCS/NSS F1
+2024-C24103860012,2024,C,C24103860012,prediction-diagnosis,high,yes,yes,see extract,p2,medium,readable C
+2024-C24104220149,2024,C,C24104220149,prediction-diagnosis,high,Steinmetz,temperature-corrected,R 0.041 vs 0.9955,p2,medium,SVM/graph 100% waveform
+2024-D24103850092,2024,D,D24103850092,image-spatial,high,GIS/LULC,yes,MK + RF/SVM/XGB,p2,medium,spatial
+2024-D24104250063,2024,D,D24104250063,image-spatial,high,yes,yes,see extract,p2,medium,readable D
+2024-E24101480006,2024,E,E24101480006,optimization-scheduling,high,hist-avg/SVM/tree,killed,YOLO/Deepsort; LSTM vs Greenberg,p2-3,medium,video+traffic
+2024-E24102870008,2024,E,E24102870008,optimization-scheduling,high,yes,yes,see extract,p2,medium,readable E
+2024-F24102870082,2024,F,F24102870082,signal-inverse,high,geometric delay,Roemer/Shapiro,277.92s vs 473.90s,p2,medium,state vectors
+2024-F24910020063,2024,F,F24910020063,signal-inverse,high,yes,yes,see extract,p2,medium,readable F
