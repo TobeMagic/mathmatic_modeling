@@ -25,6 +25,7 @@ RUNTIME_SCRIPTS = {
     "year_gate.py",
     "_paths.py",
     "scaffold_workspace.py",
+    "writer_id.py",
 }
 SKIP_PARTS = {"__pycache__", ".tmp", ".pytest_cache", "optional"}
 SKIP_SUFFIX = {".pyc", ".skill"}

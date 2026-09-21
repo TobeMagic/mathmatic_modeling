@@ -5,7 +5,7 @@ Viewer: `eval-report.html`
 Live answers: `runs/<id>/{baseline,with_skill.md}`  
 Static audit: `audit-skill.json` (`static_weighted_score=74`, dimension 8 `NOT_RUN`)
 
-Training scores in those answers are not official jury scores. **All with_skill cells in this round are author-written (dry-run).** Do not treat 18/18 as a live-LLM improvement.
+Training scores in those answers are not official jury scores. **All with_skill cells in this round are author-written (dry-run).** Do not treat 19/19 as a live-LLM improvement.
 
 ## Trigger tests
 
@@ -28,13 +28,14 @@ All positive Huawei Cup / 研赛 / 数模之星 / CPMCM / 全题侦察 prompts h
 | e11 全题侦察 | FAIL | PASS | A–F 矩阵 + G1，不锁题 |
 | e12 G1 不停 | FAIL | PASS | 拒绝写求解器 |
 | e13 先上主模型 | FAIL | PASS | 必须先 baseline |
-| e14 增量摘要 | FAIL | PASS | 问题二 not-run 不填数 |
+| e14 增量摘要 | FAIL | PASS | 问题二 not-run；只 ingest authorized |
 | e15 三角色排班 | FAIL | PASS | 不分配 M/C/W |
 | e16 只说继续 | FAIL | PASS | 停在 G4 |
 | e17 失败包装 | FAIL | PASS | failed + pivot，不写进摘要 |
 | e18 S1–S8 空跑 | FAIL | PASS | 每阶段门禁 + not-run |
+| e19 无 activity shard | FAIL | PASS | metrics.json 不能代替 plans/activity/*.md |
 
-With-skill: 18/18. Baseline: 3/18. Skill 无回退。因 dry-run=100%，**不宣称现场模型行为有效**。
+With-skill: 19/19. Baseline: 3/19. Skill 无回退。因 dry-run=100%，**不宣称现场模型行为有效**。
 
 ## 人工备注
 

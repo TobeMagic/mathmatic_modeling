@@ -26,9 +26,9 @@ High
 |---|---|---|---|
 | S0 data audit | R0 | reports/data-audit.md | attachments opened |
 | S4 Q1 baseline | R1 | experiments/runs/<id>/ | ledger E1 done or failed |
-| S4 other-Q baselines | R2 | results/result-ledger.csv | each Q a row |
-| S5 optional upgrades | R3 | experiments/runs/<id>/ | kill log + falsifier |
-| S6 sections | R4 | paper/sections/ | plans/claim-evidence.md |
+| S4 other-Q baselines | R2 | results/ledger/<slug>.csv | each Q a row |
+| S5 optional upgrades | R3 | experiments/runs/<id>/ + plans/activity/<slug>.md | kill log + falsifier |
+| S6 sections | R4 | paper/sections/ | claim-evidence `authorized` ingested |
 | S8 submit | R5 | paper/submission/ | validator |
 
 ## Failure / recovery

@@ -31,6 +31,7 @@ class PackSkillTests(unittest.TestCase):
             names = zipfile.ZipFile(dest).namelist()
         self.assertTrue(any(n.endswith("SKILL.md") for n in names))
         self.assertTrue(any("scaffold_workspace.py" in n for n in names))
+        self.assertTrue(any("writer_id.py" in n for n in names))
         joined = "\n".join(names)
         for token in FORBIDDEN:
             self.assertNotIn(token, joined, msg=token)

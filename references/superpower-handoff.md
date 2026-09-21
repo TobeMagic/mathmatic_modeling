@@ -17,7 +17,7 @@ Copy `assets/execution-plan-slice.md` to contest `plans/execution-plan.md`. Keep
 
 ## Done-when
 
-Every numbered question has a slice that produces either a ledger `done` row or a written `failed` + pivot. `validate_submission.py` is a late slice, not a modeling slice.
+Every numbered question has a slice that produces either a `results/ledger/<slug>.csv` `done` row (plus an append to **that writer's** `plans/activity/<slug>.md`) or a written `failed` + pivot. `validate_submission.py` is a late slice, not a modeling slice. Section writes ingest only `paper_eligible=authorized` rows.
 
 Stop with:
 

@@ -14,6 +14,8 @@
 
 Status vocabulary: `planned` | `running` | `done` | `failed` | `not-run`
 
+Whether a done row may enter the paper lives on **your** `results/ledger/<slug>.csv` and `plans/claim-evidence.md` (`paper_eligible`), not in this matrix. After each run, append **your** `plans/activity/<slug>.md`.
+
 Leakage notes (prediction / spatial):
 - [ ] 时间切分而非随机切分
 - [ ] 标准化未用测试集统计量

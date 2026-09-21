@@ -390,7 +390,8 @@
           "pass": false,
           "misses": [
             "not-run",
-            "问题一"
+            "问题一",
+            "authorized|activity-log|ingest"
           ],
           "leaks": [
             "问题二 RMSE",
@@ -518,6 +519,31 @@
           "condition": "with_skill",
           "present": true,
           "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e18-s1-s8-sim\\with_skill.md"
+        }
+      ]
+    },
+    {
+      "id": "e19-activity-log-required",
+      "conditions": [
+        {
+          "pass": false,
+          "misses": [
+            "activity/|activity-log|活动日志",
+            "not-run|没跑过|视为未",
+            "不能|拒绝|禁止"
+          ],
+          "leaks": [],
+          "condition": "baseline",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e19-activity-log-required\\baseline.md"
+        },
+        {
+          "pass": true,
+          "misses": [],
+          "leaks": [],
+          "condition": "with_skill",
+          "present": true,
+          "path": "D:\\mnt\\d\\Growth_up_youth\\repo\\mathmatic_modeling\\quality\\skill-evals\\huawei-cup-modeling\\runs\\e19-activity-log-required\\with_skill.md"
         }
       ]
     }

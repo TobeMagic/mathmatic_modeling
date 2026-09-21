@@ -25,7 +25,7 @@ Every headline number needs a row in `assets/experiment-matrix.md` with:
 6. Script path / seed (no teammate role)
 7. Status: `planned` | `running` | `done` | `failed` | `not-run`
 
-The paper may cite a number only from a `done` row. Keep the same rows in contest `results/result-ledger.csv` and `plans/experiment-matrix.md`.
+The paper may cite a number only from a `done` row with `paper_eligible=authorized` or `in_draft`. Keep the same claims in some `results/ledger/<slug>.csv` and `plans/experiment-matrix.md`. After every real run or failure, **append your** `plans/activity/<slug>.md`. Default `paper_eligible=candidate` (or `no` for probes). G5 records `authorized` on `plans/claim-evidence.md` only — do not edit a teammate's shards.
 
 Plus these checks when they apply:
 
@@ -97,4 +97,4 @@ Order:
 
 ## What to write in the paper
 
-One paragraph per question: setup, baseline, number, falsification check, limitation. Then put the table. The figure must match the table. If they disagree, the table wins until the figure is fixed.
+S6 is ingest, not a rewrite. Load `references/incremental-paper.md`. One paragraph per **authorized** question: setup, baseline, number, falsification check, limitation. Then put the table. The figure must match the table. If they disagree, the table wins until the figure is fixed. `candidate` rows stay out of `paper/` until G5.

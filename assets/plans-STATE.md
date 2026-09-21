@@ -21,9 +21,9 @@ next_action:
 | S1 | `research/letter-comparison-matrix.md` | |
 | S2 | `plans/solution.md` | |
 | S3 | `plans/execution-plan.md` | |
-| S4 | every Q has a ledger row | |
-| S5 | `plans/experiment-matrix.md` honest | |
-| S6 | authorized `paper/sections/` | |
+| S4 | every Q has a row in some `results/ledger/*.csv` + `plans/activity/*.md` | |
+| S5 | `plans/experiment-matrix.md` honest; `paper_eligible` on candidates | |
+| S6 | ingest `authorized` into `paper/sections/` | |
 | S7 | training review in chat / `reports/` | |
 | S8 | `paper/submission/` | |
 

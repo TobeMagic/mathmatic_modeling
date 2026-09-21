@@ -25,6 +25,8 @@ DIRS = [
     "results/tables",
     "results/figures",
     "results/exports",
+    "results/ledger",
+    "plans/activity",
     "reports",
     "paper/sections",
     "paper/manuscript",
@@ -42,6 +44,8 @@ COPIES = {
     "assets/experiment-matrix.md": "plans/experiment-matrix.md",
     "assets/schedule-96h-solo.md": "plans/schedule-96h.md",
     "assets/claim-evidence-matrix.md": "plans/claim-evidence.md",
+    "assets/activity-dir-README.md": "plans/activity/README.md",
+    "assets/ledger-dir-README.md": "results/ledger/README.md",
     "assets/run-log.md": "plans/run-log.md",
     "assets/letter-comparison-matrix.md": "research/letter-comparison-matrix.md",
     "assets/abstract-skeleton.md": "paper/sections/abstract.md",
@@ -49,12 +53,10 @@ COPIES = {
     "assets/workspace-template/README.md": "LAYOUT.md",
 }
 
-LEDGER = """run_id,question,claim,baseline,slice,metric,value,script,seed,status
-"""
-
 GITIGNORE = """data/raw/
 experiments/runs/*/tmp/
 paper/build/
+results/result-ledger.merged.csv
 *.pdf
 .DS_Store
 """
@@ -64,18 +66,26 @@ README = """# Contest workspace
 Initialized from the Huawei Cup Skill repo (`scaffold_workspace.py`).
 
 - Progress: `plans/STATE.md`
+- Per-writer logs: `plans/activity/<slug>.md` (create with `python scripts/writer_id.py --contest . --init`)
+- Per-writer numbers: `results/ledger/<slug>.csv`
 - Plan / matrix: `plans/solution.md`, `plans/experiment-matrix.md`, `plans/execution-plan.md`
-- Numbers: `results/result-ledger.csv`
+- What may enter the paper: `plans/claim-evidence.md` (paper lane only)
 - Our paper: `paper/`
 - Reference first-prize PDFs stay in the **Skill** repo under `ref-papers/`. Do not copy them here.
 """
 
 RUN_README = """# One folder per run
 
-Name: `{question}-{model}-{yyyymmdd}-{seq}` e.g. `q1-fifo-20260923-01`
+Name: `{question}-{model}-{slug}-{yyyymmdd}-{seq}` e.g. `q1-fifo-alice-20260923-01`
 
 Keep: `config.yaml`, `log.txt`, `metrics.json`, `hashes.txt`.
-Copy headline metrics into `results/result-ledger.csv`.
+Copy headline metrics into **your** `results/ledger/<slug>.csv`.
+Append one row to **your** `plans/activity/<slug>.md`.
+Without a matching activity row in any `plans/activity/*.md`, the paper lane treats the run as not-run.
+
+```text
+python scripts/writer_id.py --contest . --init
+```
 """
 
 
@@ -96,7 +106,6 @@ def main(argv: list[str] | None = None) -> int:
         dst.parent.mkdir(parents=True, exist_ok=True)
         if src.is_file():
             shutil.copyfile(src, dst)
-    (dest / "results" / "result-ledger.csv").write_text(LEDGER, encoding="utf-8")
     (dest / "experiments" / "runs" / "README.md").write_text(RUN_README, encoding="utf-8")
     (dest / "reports" / "data-audit.md").write_text("# Data audit\n\n", encoding="utf-8")
     (dest / "reports" / "baseline.md").write_text("# Baseline report\n\n", encoding="utf-8")

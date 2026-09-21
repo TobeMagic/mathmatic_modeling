@@ -26,9 +26,9 @@ Default route: **survey all letters → human chooses → deepen and plan → ba
 | S1 全题侦察 | **G1** letter choice |
 | S2 锁题深挖 | **G2** `plans/solution.md` |
 | S3 计划交接 | **G3** `plans/execution-plan.md` |
-| S4 Baseline | **G4** ledger row per question |
-| S5 优化实验 | **G5** write-scope |
-| S6 增量论文 | **G6** draft |
+| S4 Baseline | **G4** each Q has a row in some `results/ledger/*.csv` + `plans/activity/*.md` |
+| S5 优化实验 | **G5** write-scope (`candidate` → `authorized`) |
+| S6 增量论文 | **G6** ingest `authorized` into draft |
 | S7 评审回路 | **G7** submit-ready |
 | S8 提交 | freeze or blocker list |
 
@@ -59,6 +59,10 @@ Default route: **survey all letters → human chooses → deepen and plan → ba
 - Do not lock a contest letter for the user. G1 is a human decision.
 - Do not promote CUMCM/MCM page, figure, hour, language, or score quotas as Huawei Cup rules.
 - Do not ship language code templates. Choose the language after the plan.
+- Do not cite a paper number unless some `plans/activity/*.md` has a matching run row. A lone `metrics.json` is not evidence.
+- Do not ingest `paper_eligible=candidate` (or `no` / `stale`) into `paper/`. Only `authorized` / `in_draft`.
+- Do not edit another person's `plans/activity/<slug>.md` or `results/ledger/<slug>.csv`. Do not revive a shared `plans/activity-log.md`.
+- Do not split teammate-role entry points or write M/C/W 排班. People may divide labor; the Skill only tracks artifacts.
 
 ### 0. Year gate
 
@@ -76,7 +80,7 @@ If the user mixes tasks, sequence them. Still load one reference at a time.
 ### 1. S0 启动
 
 When: new contest repo, 开始, year check.  
-Load: this file; `python scripts/year_gate.py`; `python scripts/scaffold_workspace.py --dest <contest-repo>`; `references/workspace-layout.md`.  
+Load: this file; `python scripts/year_gate.py`; `python scripts/scaffold_workspace.py --dest <contest-repo>`; `python scripts/writer_id.py --contest <contest-repo> --init`; `references/workspace-layout.md`.  
 Stop when `plans/STATE.md` exists in the contest repo.
 
 ### 2. S1 全题侦察
@@ -98,16 +102,19 @@ Stop at **G3** `AWAITING_HUMAN_REVIEW(execution_plan)`.
 ### 5. S4 Baseline
 
 When: plan approved; 编程. Load `references/code-norms.md`.  
+First: `python scripts/writer_id.py --contest <contest-repo> --init`.  
+After every real run (or failure): write `experiments/runs/<id>/` (name includes slug), append **your** `results/ledger/<slug>.csv` and **your** `plans/activity/<slug>.md`, set `paper_eligible=candidate` if the row should be writable. Never edit a teammate's shard.  
 Stop at **G4** `AWAITING_HUMAN_REVIEW(baseline)`.
 
 ### 6. S5 优化实验
 
 When: baseline done. Load `references/experiments-validation.md`.  
-Stop at **G5** `AWAITING_HUMAN_REVIEW(write_scope)`.
+Same per-writer record as S4. When the matrix is honest, stop at **G5** `AWAITING_HUMAN_REVIEW(write_scope)` so a human can mark rows `authorized` in `plans/claim-evidence.md` (paper lane only).
 
 ### 7. S6 增量论文
 
-When: authorized Qs have `done` evidence. Load `references/paper-style.md`, then `references/figure-style.md` / `assets/figure-ai-prompts.md`.  
+When: 写论文 / 补章节, or authorized Qs have `done` evidence. Load `references/incremental-paper.md`, then `references/paper-style.md`, then `references/figure-style.md` / `assets/figure-ai-prompts.md`.  
+Read **all** `plans/activity/*.md` and `results/ledger/*.csv`. Ingest only `authorized` rows; patch `paper/sections/`; append ingest receipts only to **your** activity file.  
 Stop at **G6** `AWAITING_HUMAN_REVIEW(draft)`.
 
 ### 8. S7 评审回路
@@ -120,14 +127,15 @@ Stop at **G7** `AWAITING_HUMAN_REVIEW(submit_ready)` or route back to S4/S5/S6.
 When: 文件名 / MD5 / 匿名. Load `references/official-rules.md`; `python scripts/validate_submission.py`.  
 Stop at freeze or a blocker list.
 
-Always available: `references/ai-integrity.md`; `references/workspace-layout.md`; `references/profiles.md`; `references/ref-paper-usage.md`.
+Always available: `references/ai-integrity.md`; `references/workspace-layout.md`; `references/profiles.md`; `references/ref-paper-usage.md`; `references/incremental-paper.md`.
 
 ## Resume
 
-1. In the **contest** repo, read `plans/STATE.md` (then `plans/PROJECT.md`, `plans/CONTEXT.md`).
+1. In the **contest** repo, read `plans/STATE.md` (then `plans/PROJECT.md`, `plans/CONTEXT.md`, every `plans/activity/*.md`).
 2. Continue from `current_stage`. Do not re-ask known fields.
 3. If a gate is open, restate the artifact and wait. “继续” is not a decision unless they also name it (letter, approve plan, write Q1, …).
-4. Missing 2026 opening notice → keep `year=2025-provisional`. Opening present and Word-template notice still missing → `year=2026`, format items stay labeled until transcribed.
+4. S4/S5 may keep recording runs in **each writer's own files** while S6 ingests already-`authorized` questions. New runs stay `candidate` until a human names them `authorized` in `plans/claim-evidence.md`.
+5. Missing 2026 opening notice → keep `year=2025-provisional`. Opening present and Word-template notice still missing → `year=2026`, format items stay labeled until transcribed.
 
 ## Human gates
 
@@ -139,8 +147,8 @@ Emit the marker on its own line. Then stop generating the next stage’s long wo
 | G2 | `plans/solution.md` | approve / revise / change letter |
 | G3 | `plans/execution-plan.md` | approve plan |
 | G4 | baseline ledger row or written failure + pivot | continue / pivot / narrow scope |
-| G5 | matrix + claim–evidence status | which questions may enter the paper |
-| G6 | new or updated sections + figure jobs | revise / more experiments / accept |
+| G5 | matrix + claim–evidence + `paper_eligible` | which questions/rows become `authorized` |
+| G6 | patched sections + ingest row in **your** `plans/activity/<slug>.md` | revise / more experiments / accept |
 | G7 | veto table + `training_score=/100 (not official)` | submit-ready or loop |
 
 Inside a stage, execute without extra confirmation. Between stages, wait.
@@ -150,7 +158,7 @@ Inside a stage, execute without extra confirmation. Between stages, wait.
 1. Cover every numbered question with a **baseline** that can finish in hours.
 2. Build a paper skeleton from baseline numbers and `not-run` holes.
 3. Upgrade models only where the baseline is weak **and** a falsifiable test exists.
-4. Paper text may cite a number only from contest `results/result-ledger.csv` with `status=done`.
+4. Paper text may cite a number only from some `results/ledger/*.csv` with `status=done` **and** `paper_eligible=authorized` or `in_draft`, plus a matching `run_id` in some `plans/activity/*.md`.
 
 Optional `training_profile=full-draft` is a completeness target, never an official rule. See `references/profiles.md`.
 
@@ -161,12 +169,13 @@ Emit only what the **current stage** can honestly fill.
 1. Stage + gate marker
 2. Problem map or letter-comparison matrix
 3. 2–3 model candidates with a written kill (S2+)
-4. Experiment matrix / result-ledger delta
-5. Claim–evidence matrix
-6. Outline + figure plan (jobs, not quotas)
-7. Scorecard only in S7
-8. Fatal risks
-9. Next human decision (one sentence)
+4. Experiment matrix / per-writer ledger delta
+5. Activity rows appended to **your** `plans/activity/<slug>.md`
+6. Claim–evidence matrix (`paper_eligible`)
+7. Outline + figure plan (jobs, not quotas)
+8. Scorecard only in S7
+9. Fatal risks
+10. Next human decision (one sentence)
 
 ## Failure Handling
 
@@ -176,6 +185,9 @@ Emit only what the **current stage** can honestly fill.
 | User says 继续 with an open gate | Restate the waiting artifact | Stay in the same stage |
 | Baseline fails | Write `failed` + pivot in the ledger | Do not package a novel solver as the baseline |
 | Number missing | `status=not-run`, blank cell | Refuse a plausible RMSE |
+| metrics.json without any `plans/activity/*.md` row | Treat as not-run for the paper | Append **your** activity file first |
+| Git user.name missing | Stop writes | `git config user.name` then `writer_id.py --init` |
+| User asks to write `candidate` numbers | Keep them out of `paper/` | Wait for G5 `authorized` |
 | User asks for official 百分制 / 国一≥85 | Isolation statement | Offer `training_score, not official` |
 | CUMCM 20页/8图/15000字 as Huawei law | Label `training_profile` only | Keep official 2-page abstract |
 | Opening a `ref-papers/` file | Prefix `[参考] {filename}` | Never treat as contest `paper/` |
@@ -200,5 +212,6 @@ A stage is done when its contest artifact exists and the matching `AWAITING_HUMA
 ```text
 python scripts/year_gate.py
 python scripts/scaffold_workspace.py --dest <contest-repo>
+python scripts/writer_id.py --contest <contest-repo> --init
 python scripts/validate_submission.py path/to/A25000010001.pdf --year 2025
 ```

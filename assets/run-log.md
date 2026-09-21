@@ -5,7 +5,7 @@
 `current_stage`：S0–S8　`open_gate`：G1–G7 或空　`training_profile`：conservative-baseline  
 题面路径：____　官方模板路径：____　数据路径：____
 
-优先读 `plans/STATE.md`。本文件只是账本备份。
+优先读 `plans/STATE.md`。本文件只是账本快照。追加式执行记录在 `plans/activity/<slug>.md`（每人一份），不要改写别人的文件。
 
 ## 当前阶段
 

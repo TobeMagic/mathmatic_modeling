@@ -24,8 +24,9 @@ plans/                     # Superpower-style control plane: 方案 + 实验 + �
   experiment-matrix.md     # 要跑什么（计划），不是跑出的数
   execution-plan.md        # High-tier 切片
   schedule-96h.md
-  claim-evidence.md        # 主张 → ledger 行
-  run-log.md               # 可选账本备份
+  claim-evidence.md        # 主张 → ledger 行 + paper_eligible（写稿侧维护）
+  activity/<slug>.md       # 每人一份追加日志；S6 读全部
+  run-log.md               # 可选账本快照，不要拿它代替 activity/
 
 problem/                   # 当届题面与官方文件
   statement/
@@ -53,7 +54,7 @@ data/
 experiments/               # 配置 + 每一次运行
   configs/
   runs/
-    <run_id>/
+    <question>-<model>-<slug>-<yyyymmdd>-<seq>/
       config.yaml
       log.txt
       metrics.json
@@ -63,7 +64,7 @@ results/                   # 论文只引用这里的数和图
   tables/
   figures/
   exports/
-  result-ledger.csv
+  ledger/<slug>.csv        # 每人一份；不要共享 result-ledger.csv
 
 reports/
   data-audit.md
@@ -85,16 +86,20 @@ There is **no** `compliance/`, `reviews/`, `src/`, or top-level `state/`. Progre
 | Path | Whose paper |
 |---|---|
 | Skill repo `ref-papers/` | REFERENCE only. Filename starts with `{year}-{tier}-{team_id}-`. Never treat as our manuscript. |
-| Contest repo `paper/` | OUR draft. Numbers only from `results/result-ledger.csv` with `status=done`. |
+| Contest repo `paper/` | OUR draft. Numbers only from some `results/ledger/*.csv` with `status=done` and `paper_eligible=authorized` or `in_draft`, plus a matching `run_id` in some `plans/activity/*.md`. |
 
 Cite a reference as `[参考] 2024-first-A24102940057 p.2`. Do not write 本文 / 我们 about a file under `ref-papers/`.
 
 ## Number source of truth
 
-`experiments/runs/<id>/` → `results/result-ledger.csv` → `plans/claim-evidence.md` → `paper/sections/`.
+`python scripts/writer_id.py --contest <contest-repo> --init` → `experiments/runs/<id>/` → **your** `results/ledger/<slug>.csv` + **append your** `plans/activity/<slug>.md` → `plans/claim-evidence.md` (`paper_eligible`, paper lane) → `paper/sections/`.
 
-If code changed after a cited number, mark the ledger row `stale` and re-run.
+S6 reads **all** shards. A run with `metrics.json` but no `run_id` in any `plans/activity/*.md` is **not-run** for the paper lane.
+
+`paper_eligible`: `no` | `candidate` | `authorized` | `in_draft` | `stale`. Teammates mark `candidate` on **their** ledger; G5 records `authorized` on `plans/claim-evidence.md`; S6 ingest sets `in_draft` there. Do not edit a teammate's activity or ledger file.
+
+If code changed after a cited number, mark the ledger row `stale` on **your** shard and re-run. Append a new activity row; do not edit history.
 
 ## Git
 
-Commit text, code, configs, ledgers, and small figures. Keep huge `data/raw/` local. Do not put Skill-repo reference PDFs into the contest repo.
+Commit text, code, configs, **per-writer** ledgers, and small figures. Keep huge `data/raw/` local. Do not put Skill-repo reference PDFs into the contest repo. Do not commit `results/result-ledger.merged.csv`.

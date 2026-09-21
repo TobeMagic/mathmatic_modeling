@@ -48,6 +48,7 @@ git clone https://github.com/TobeMagic/mathmatic_modeling.git
 cd mathmatic_modeling
 python scripts/year_gate.py
 python scripts/scaffold_workspace.py --dest ../huawei-cup-contest
+python scripts/writer_id.py --contest ../huawei-cup-contest --init
 ```
 
 然后在 Cursor 打开**本仓库**（根目录 `SKILL.md`），竞赛工作在 `../huawei-cup-contest` 进行。进度先读竞赛仓 `plans/STATE.md`。
@@ -64,7 +65,7 @@ python scripts/pack_skill.py
 
 - **S0–S8 流程**：启动 → 全题侦察 → 锁题 → 计划 → baseline → 实验 → 增量论文 → 评阅 → 提交
 - **G1–G7 人工门**：Agent 停在 `AWAITING_HUMAN_REVIEW(...)`，不替你选 A–F
-- **诚实账本**：`results/result-ledger.csv`；未跑的格子留空
+- **诚实账本**：每人 `results/ledger/<slug>.csv` + `plans/activity/<slug>.md`；未跑的格子留空；正文只 ingest `paper_eligible=authorized`
 - **论文与图**：`references/paper-style.md`、`references/figure-style.md`、`assets/figure-ai-prompts.md`（概念图可 AI 草图；对比/敏感性图必须用实验数据）
 - **提交机械检查**：`python scripts/validate_submission.py`（文件名、匿名、摘要位置；不是质量评委）
 - **参考国一**：`ref-papers/pdf/{year}-{tier}-{team_id}-{title}.pdf`，引用时写 `[参考] 文件名 p.N`
@@ -89,7 +90,7 @@ training_profile: conservative-baseline
 status=not-run
 ```
 
-对应数值格留空，不编 RMSE。
+对应数值格留空，不编 RMSE。没有任何 `plans/activity/*.md` 行的 metrics，写稿时也当 `not-run`。
 
 ## Skill 仓库结构
 
@@ -109,11 +110,11 @@ quality/skill-evals/     # 门禁与 dry-run 答卷
 `scaffold_workspace.py` 生成（无 `compliance/`、`reviews/`、语言代码模板）：
 
 ```text
-plans/          STATE.md · solution.md · experiment-matrix.md · execution-plan.md
+plans/          STATE.md · activity/<slug>.md · claim-evidence.md · experiment-matrix.md
 problem/        statement · attachments · official
 code/           q1/ q2/   （语言自选）
 experiments/    configs/  runs/<run_id>/
-results/        result-ledger.csv · figures/ · tables/
+results/        ledger/<slug>.csv · figures/ · tables/
 paper/          我们的稿；不要拷 ref-papers
 ```
 
@@ -145,7 +146,7 @@ paper/          我们的稿；不要拷 ref-papers
 **会替我选题吗？**  
 不会。G1 必须由人说出题号。
 
-**仓库里的 18/18 eval 是现场模型分数吗？**  
+**仓库里的 19/19 eval 是现场模型分数吗？**  
 不是。`quality/skill-evals/` 里 with-skill 答卷是作者按 `SKILL.md` 写的 dry-run，只用来卡正则门禁。
 
 **没有实验结果能不能先写摘要？**  
@@ -160,6 +161,7 @@ paper/          我们的稿；不要拷 ref-papers
 
 ```bash
 python scripts/test_scaffold_workspace.py
+python scripts/test_writer_id.py
 python scripts/test_year_gate.py
 python scripts/test_validate_submission.py
 python scripts/test_pack_skill.py
