@@ -31,6 +31,33 @@ Symbol table; solver settings; main results vs baseline; sensitivity; feasibilit
 - Export **csv** from the run before polishing the figure. Caption numbers must match `result-ledger.csv`.
 - Prefer vector (PDF/SVG/EMF) for line plots; PNG only for heavy rasters. Typical Word width: one-column ~7.5–8 cm, full ~14–16 cm. Body 小四; caption slightly smaller.
 
+## Two visual registers (evidence from the reference set)
+
+Rendered the route/flowchart pages of the first-prize PDFs. They do not use one
+style; they use two, and mixing them is what makes a paper look amateur.
+
+- **Overall technical roadmap — designed, tinted, full page.** Best in the set is
+  2023 D23106350004 p.7: an outer rounded frame divided into one **swimlane per
+  stage**, a right-pointing **banner** naming each lane, soft low-saturation
+  fills (rose / sand / sage / slate) with a **hairline drop shadow**, **chevrons**
+  instead of plain arrows, and a nested **"相关方法" side panel** listing the
+  methods and solvers used in that lane. It occupies a whole page under its own
+  heading. Add one more row per lane for *what the stage freezes and hands
+  downstream* — that is what makes a four-problem paper legible at a glance.
+- **In-chapter flowcharts — near-grayscale and plain.** 2022 D22103360092 p.11:
+  rounded boxes, diamonds for decisions, thin black orthogonal arrows, light
+  grey fills only. No tint, no shadow.
+
+Implementation notes that cost a redraw each:
+- Derive every lane/row `y` from the lane heights and the gap. Hand-placed
+  coordinates put the methods panel on top of the last step of the chain.
+- Draw the shadow as a second patch offset down-right, never a blur — a blur
+  rasterises the whole vector figure.
+- An em dash inside a CJK run (`运输—中继协同`) reads as the character 一 at
+  figure sizes. Use `与`.
+- Tables in this venue: horizontal rules only, light grey banding, no vertical
+  lines.
+
 ## Rendering pitfalls that fail silently
 
 These three cost a re-draw each and none of them raises an error.
